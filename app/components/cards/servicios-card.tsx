@@ -1,5 +1,5 @@
 import { Button, Card, CardBody, CardHeader, List, ListItem, Typography } from "@material-tailwind/react";
-
+import Image from "next/image";
 interface ServiciosCardPropsType {
     img: string;
     title: string;
@@ -10,31 +10,32 @@ interface ServiciosCardPropsType {
 export default function ServiciosCard({ img, title, desc, subtitle }: ServiciosCardPropsType){
     return(
         <>
-            <Card className="w-full max-w-full flex-row my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover: duration-300 ...">
+            <Card className="w-full max-w-full flex-row my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover: duration-300 ..."
+             placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <CardHeader
-                shadow={false}
-                floated={false}
-                className="m-0 w-2/5 shrink-0 rounded-r-none">
-                <img
+            shadow={false}
+            floated={false}
+            className="m-0 w-2/5 shrink-0 rounded-r-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                <Image
                   src={img}
                   alt="card-image"
                   width={500}
                   height={500}
                   className="h-full w-full object- opacity-80"/>
               </CardHeader>
-              <CardBody>
-                <Typography variant="h3" color="light-green" className="mb-4 animate-bounce">
+              <CardBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                <Typography variant="h3" color="light-green" className="mb-4 animate-bounce" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                   {title}
                 </Typography>
-                <Typography variant="h4" color="blue-gray" className="mb-2">
+                <Typography variant="h4" color="blue-gray" className="mb-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                   {subtitle}
                 </Typography>
-                <Typography color="gray" className="mb-8 font-normal">
+                <Typography color="gray" className="mb-8 font-normal" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <div>
-                        <List className="text-center mt-2" children={undefined} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                        <List className="text-center mt-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                                     {desc.map((name) => (
                                         
-                                    <ListItem key={name}>
+                                    <ListItem key={name} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                                         {name}
                                     </ListItem>
                                     ))}
@@ -42,7 +43,7 @@ export default function ServiciosCard({ img, title, desc, subtitle }: ServiciosC
                       </div>
                 </Typography>
                 <a href="#" className="inline-block">
-                  <Button variant="gradient" color="light-green" className="flex items-center gap-2">
+                  <Button variant="gradient" color="light-green" className="flex items-center gap-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     Contáctanos
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

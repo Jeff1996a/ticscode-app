@@ -27,22 +27,22 @@ export default function AppsCard({ img, title, desc, icon, items, idApp, price}:
                     <div className='mx-auto -mt-8 w-full  md:w-5/12'>
                      
                       <Typography
-                        variant="h2"
-                        className="font-bold animate-bounce"
-                        color="green">
+                  variant="h2"
+                  className="font-bold animate-bounce"
+                  color="green" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                         {title}
                       </Typography>
                       <Typography
-                        variant="h5"
-                        className="font-light ms-1 text-blue-gray-500">
+                  variant="h5"
+                  className="font-light ms-1 text-blue-gray-500"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                         Este paquete incluye las siguientes características:
                       </Typography>
                       <div>
-                        <List className="text-center mt-2" children={undefined} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                        <List className="text-center mt-2"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                                     {items.map((name) => (
                                         
-                                    <ListItem key={name.title}>
-                                        <ListItemPrefix>
+                                    <ListItem key={name.title} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                                        <ListItemPrefix placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                                         {name.icon}
                                         </ListItemPrefix>{name.title}
                                     </ListItem>
@@ -52,9 +52,9 @@ export default function AppsCard({ img, title, desc, icon, items, idApp, price}:
                         
                     </div> 
                     <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300 ...">
-                    <Card className="shadow-lg shadow-gray-500/10" children={undefined} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                        <CardHeader className="relative h-56">
-                        <img
+                    <Card className="shadow-lg shadow-gray-500/10"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                        <CardHeader className="relative h-56"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                        <Image
                             alt="Card Image"
                             src={img}
                             width={800}
@@ -62,32 +62,29 @@ export default function AppsCard({ img, title, desc, icon, items, idApp, price}:
                             className="h-full w-full"
                         />
                         </CardHeader>
-                        <CardBody>
+                        <CardBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                            <Typography
-                            variant="small"
-                            color="light-green"
-                            className="font-normal uppercase text-center"
-                            >
+                      variant="small"
+                      color="light-green"
+                      className="font-normal uppercase text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                            >
                             Desde
                             </Typography>
                             <Typography
-                                variant="h3"
-                                color="light-green"
-                                className="mt-6 flex justify-center gap-1 text-7xl font-normal"
-                                >
+                      variant="h3"
+                      color="light-green"
+                      className="mt-6 flex justify-center gap-1 text-7xl font-normal" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                                >
                                 <span className="mt-2 text-4xl animate-pulse">$</span>{price}{" "}
                                 <span className="self-end text-2xl animate-pulse">+ i.v.a</span>
                             </Typography>
-                            <Typography className="font-normal text-blue-gray-500">
+                            <Typography className="font-normal text-blue-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                                 {desc}
                             </Typography>
                         </CardBody>
                         <Button
-                            variant="outlined"
-                            color="green" 
-                            size="sm"
-                            className="hidden sm:inline-block mb-10 mx-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
-                            >
+                    variant="outlined"
+                    color="green"
+                    size="sm"
+                    className="hidden sm:inline-block mb-10 mx-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                            >
                             <span>Contratar</span>
                         </Button>
                     </Card>

@@ -1,6 +1,7 @@
 "use client";
 import { Typography, Card, CardBody } from "@material-tailwind/react";
 import React from "react";
+import Image from "next/image";
 interface ContentCardPropsType {
   img: string;
   title: string;
@@ -9,29 +10,29 @@ interface ContentCardPropsType {
 
 function ContentCard({ img, title, desc }: ContentCardPropsType) {
   return (
-    <Card
-      className="relative grid min-h-[30rem] items-end overflow-hidden rounded-xl"
-      color="transparent"
-    >
-      <img
+    <>
+      <Card
+        className="relative grid min-h-[30rem] items-end overflow-hidden rounded-xl"
+        color="transparent"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}    >
+      <Image
         src={img}
         alt="bg"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-black/70" />
-      <CardBody className="relative flex flex-col justify-end">
-        <Typography variant="h4" color="white">
+      <CardBody className="relative flex flex-col justify-end" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Typography variant="h4" color="white"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           {title}
         </Typography>
         <Typography
-          variant="paragraph"
-          color="white"
-          className="my-2 font-normal"
-        >
+            variant="paragraph"
+            color="white"
+            className="my-2 font-normal" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           {desc}
         </Typography>
       </CardBody>
     </Card>
+    </>
   );
 }
 
@@ -53,20 +54,18 @@ const contents = [
   },
 ];
 
-export function BlogSection11() {
+export default function BlogSection11() {
   return (
     <section className="container mx-auto px-8 py-10 lg:py-28">
       <Typography
         variant="h2"
         color="blue-gray"
-        className="!text-2xl !leading-snug lg:!text-3xl"
-      >
+        className="!text-2xl !leading-snug lg:!text-3xl"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
         Build something great
       </Typography>
       <Typography
         variant="lead"
-        className="mt-2 max-w-lg !font-normal !text-gray-500"
-      >
+        className="mt-2 max-w-lg !font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
         We&apos;re constantly trying to express ourselves and actualize our
         dreams. If you have the opportunity to play this game of life you need
         to appreciate every moment.
@@ -80,5 +79,3 @@ export function BlogSection11() {
     </section>
   );
 }
-
-export default BlogSection11;

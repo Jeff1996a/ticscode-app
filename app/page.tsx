@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import { inter } from '@/app/ui/font';
+import { inter } from '@/app/font/font';
 import { Button } from "@material-tailwind/react";
 import Index from "@/app/index/page"
 import { FloatingWhatsApp } from 'react-floating-whatsapp'

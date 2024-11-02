@@ -1,6 +1,6 @@
 'use client';
 import { inter } from '@/app/ui/font';
-
+import Image from 'next/image';
 
 export default function Portafolio() {
   const data = [
@@ -47,7 +47,7 @@ export default function Portafolio() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
       {data.map(({ imageLink }, index) => (
         <div key={index}>
-          <img
+          <Image
             className="h-40 w-full max-w-full rounded-lg object-cover object-center"
             src={imageLink}
             alt="gallery-photo"

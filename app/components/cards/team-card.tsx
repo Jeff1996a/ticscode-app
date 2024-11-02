@@ -1,6 +1,9 @@
 import { Card, Avatar, Typography } from "@material-tailwind/react";
-
-export function TeamCard({ img, name, position, socials }) {
+interface TeamCardPropsType {
+  img: string;
+  name: string;
+}
+export function TeamCard({ img, name} : TeamCardPropsType) {
   return (
     <Card color="transparent" shadow={false} className="text-center" placeholder="" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <Avatar
