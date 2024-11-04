@@ -82,15 +82,13 @@ function ProfileMenu() {
         <Button
           variant="text"
           color="blue-gray"
-          className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
-        >
+          className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           <Avatar
             variant="circular"
             size="sm"
             alt="tania andrew"
             className="border border-gray-900 p-0.5"
-            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-          />
+            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          />
           <ChevronDownIcon
             strokeWidth={2.5}
             className={`h-3 w-3 transition-transform ${
@@ -99,19 +97,16 @@ function ProfileMenu() {
           />
         </Button>
       </MenuHandler>
-      <MenuList className="p-1">
+      <MenuList className="p-1"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         {profileMenuItems.map(({ label, icon }, key) => {
           const isLastItem = key === profileMenuItems.length - 1;
           return (
             <MenuItem
               key={label}
               onClick={closeMenu}
-              className={`flex items-center gap-2 rounded ${
-                isLastItem
+              className={`flex items-center gap-2 rounded ${isLastItem
                   ? "hover:bg-red-500/10 focus:bg-red-500/10 active:bg-red-500/10"
-                  : ""
-              }`}
-            >
+                  : ""}`}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               {React.createElement(icon, {
                 className: `h-4 w-4 ${isLastItem ? "text-red-500" : ""}`,
                 strokeWidth: 2,
@@ -120,8 +115,7 @@ function ProfileMenu() {
                 as="span"
                 variant="small"
                 className="font-normal"
-                color={isLastItem ? "red" : "inherit"}
-              >
+                color={isLastItem ? "red" : "inherit"} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
                 {label}
               </Typography>
             </MenuItem>
@@ -192,7 +186,7 @@ function ConsultoriaList() {
   const renderItems = ConsultoriaItems.map(
     ({title, description, url,icon}, key) => (
       <Link href={url} key={key}>
-        <MenuItem className="flex items-center gap-2 rounded-lg">
+        <MenuItem className="flex items-center gap-2 rounded-lg"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <div className={`rounded-lg p-5 `}>
             {React.createElement(icon, {
               strokeWidth: 2,
@@ -203,11 +197,10 @@ function ConsultoriaList() {
             <Typography
               variant="h6"
               color="blue-gray"
-              className="flex items-center text-sm"
-            >
+              className="flex items-center text-sm" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               {title}
             </Typography>
-            <Typography variant="small" color="gray" className="font-normal">
+            <Typography variant="small" color="gray" className="font-normal" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               {description}
             </Typography>
           </div>
@@ -226,12 +219,11 @@ function ConsultoriaList() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography  as="a" href="#" variant="solid"  className="font-normal text-blue-gray-500">
+          <Typography  as="a" href="#" className="font-normal text-blue-gray-500"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <ListItem
               className="flex items-center gap-2 py-2 pr-4"
               selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
-            >
+              onClick={() => setIsMobileMenuOpen((cur) => !cur)} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               <Square3Stack3DIcon className="h-6 w-6" />
               Consultoría
               <ChevronDownIcon
@@ -249,7 +241,7 @@ function ConsultoriaList() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <ul className="grid grid-cols-3 gap-y-2">{renderItems}</ul>
         </MenuList>
       </Menu>
@@ -268,7 +260,7 @@ function ServiciosList() {
   const renderItems = ServiciosItems.map(
     ({title, description, url,icon}, key) => (
       <Link href={url} key={key}>
-        <MenuItem className="flex items-center rounded-lg">
+        <MenuItem className="flex items-center rounded-lg" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <div className={`rounded-lg p-5 `}>
             {React.createElement(icon, {
               className: "h-8 w-8 text-green-500",
@@ -278,11 +270,10 @@ function ServiciosList() {
             <Typography
               variant="h6"
               color="blue-gray"
-              className="flex items-center text-sm"
-            >
+              className="flex items-center text-sm" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               {title}
             </Typography>
-            <Typography variant="small" color="gray" className="font-normal">
+            <Typography variant="small" color="gray" className="font-normal" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               {description}
             </Typography>
           </div>
@@ -301,12 +292,11 @@ function ServiciosList() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography  as="a" href="#" variant="solid"  className="font-normal text-blue-gray-500">
+          <Typography  as="a" href="#" className="font-normal text-blue-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <ListItem
               className="flex items-center gap-2 py-2 pr-3"
               selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
-            >
+              onClick={() => setIsMobileMenuOpen((cur) => !cur)} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               <CloudIcon className="h-6 w-6" />
               Servicios
               <ChevronDownIcon
@@ -324,7 +314,7 @@ function ServiciosList() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <ul className="grid grid-cols-3 gap-y-2">{renderItems}</ul>
         </MenuList>
       </Menu>
@@ -368,11 +358,9 @@ function NavList() {
           key={label}
           as="a"
           href={url}
-          variant="solid"
           color="blue-gray"
-          className="font-normal"
-        >
-          <MenuItem className="flex items-center gap-2 lg:rounded-full text-blue-gray-500">
+          className="font-normal" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
+          <MenuItem className="flex items-center gap-2 lg:rounded-full text-blue-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             {React.createElement(icon, { className: "h-6 w-6" })}{" "}
             {label}
           </MenuItem>
@@ -395,15 +383,14 @@ export function ComplexNavbar() {
   }, []);
  
   return (
-    <Navbar className="p-3 mx-auto">
+    <Navbar className="p-3 mx-auto" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <div className="container mx-auto flex items-center justify-between text-blue-gray-500">
         <Typography
-            as="a"
-            href="/"
-            variant="h3"
-            color="green"
-            className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
-            >
+          as="a"
+          href="/"
+          variant="h3"
+          color="green"
+          className="mr-4 ml-2 cursor-pointer py-1.5 font-medium" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
             <Image
                             className="h-100 w-100 mt-0 mb-0 mx-auto object-cover object-center opacity-90"
                             src="/img/logo-no-background.png"
@@ -419,8 +406,7 @@ export function ComplexNavbar() {
           color="blue-gray"
           variant="text"
           onClick={toggleIsNavOpen}
-          className="ml-auto mr-2 lg:hidden"
-        >
+          className="ml-auto mr-2 lg:hidden"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
         <div className="flex items-center gap-x-1">

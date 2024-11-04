@@ -1,28 +1,33 @@
 import { Typography, IconButton } from "@material-tailwind/react";
 import {FaFacebookF, FaInstagram, FaGithub, FaLinkedin, FaTiktok } from 'react-icons/fa';
-
+interface FooterPropsType {
+  title: string;
+  description: string;
+  socials:{color: string, name: string,icon: any, path: string}[];
+  menus: {name: string, items:{name:string, path:string}[]}[];
+  copyright: any;
+}
 const year = new Date().getFullYear();
 
-export  function Footer({ title, description, socials, menus, copyright }) {
+export  function Footer({ title, description, socials, menus, copyright } : FooterPropsType) {
   return (
     <footer className="relative px-4 pt-8 pb-6 bg-black">
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
-            <Typography variant="h4" className="mb-4" color="light-green" >
+            <Typography variant="h4" className="mb-4" color="light-green" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
               {title}
             </Typography>
-            <Typography className="font-normal text-white">
+            <Typography className="font-normal text-white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               {description}
             </Typography>
             {socials.map(({ icon, name, path }) => (
                 
                 <IconButton
-                  size="lg"
-                 
-                  key={name}       
-                  className="mb-6 rounded-full ms-2"
-                  
+                size="lg"
+
+                key={name}
+                className="mb-6 rounded-full ms-2"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                  
                 >
                   <a href={path}>{icon}</a>
                 </IconButton>
@@ -38,8 +43,7 @@ export  function Footer({ title, description, socials, menus, copyright }) {
                 <Typography
                   variant="small"
                   color="light-green"
-                  className="mb-2 block font-medium uppercase"
-                >
+                  className="mb-2 block font-medium uppercase" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                >
                   {name}
                 </Typography>
                 <ul className="mt-3">
@@ -51,8 +55,7 @@ export  function Footer({ title, description, socials, menus, copyright }) {
                         target="_blank"
                         rel="noreferrer"
                         variant="small"
-                        className="mb-2 block font-normal text-white hover:text-light-green-500"
-                      >
+                        className="mb-2 block font-normal text-white hover:text-light-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                      >
                         {item.name}
                       </Typography>
                     </li>
@@ -67,8 +70,7 @@ export  function Footer({ title, description, socials, menus, copyright }) {
           <div className="mx-auto w-full px-4 text-center">
             <Typography
               variant="small"
-              className="font-normal text-light-green-500"
-            >
+              className="font-normal text-light-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               {copyright}
             </Typography>
           </div>

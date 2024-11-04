@@ -1,5 +1,5 @@
 'use client';
-import { inter } from '@/app/ui/font';
+import { inter } from '@/app/components/ui/font';
 import Image from 'next/image';
 
 export default function Portafolio() {

@@ -1,12 +1,11 @@
 'use client';
 
 import { BuildingStorefrontIcon, ComputerDesktopIcon, DevicePhoneMobileIcon, WindowIcon } from '@heroicons/react/16/solid';
-import { Button, Card, CardBody, CardHeader, Input, List, ListItem, Textarea, Typography } from '@material-tailwind/react';
-import Image from  "next/image";
+import {  Typography } from '@material-tailwind/react';
 import ConsultoriaCard from '../components/cards/consultoria-card';
 import AppsCard from '../components/cards/apps-card';
 import { Footer } from '../components/ui/footer/footer';
-import { FaAppStore, FaClipboardList, FaRegEdit, FaRegUser, FaWhatsapp } from 'react-icons/fa';
+import { FaAppStore, FaRegEdit, FaRegUser, FaWhatsapp } from 'react-icons/fa';
 import { MdOutlineDevicesOther, MdOutlineEmail, MdOutlineListAlt } from 'react-icons/md';
 import { IoLogoTux } from 'react-icons/io';
 import { IoCartOutline, IoHomeOutline, IoShareSocialOutline } from 'react-icons/io5';
@@ -15,7 +14,6 @@ import { CiCreditCard1 } from 'react-icons/ci';
 import { FiDatabase } from 'react-icons/fi';
 import { AiOutlineAndroid } from 'react-icons/ai';
 import { RiRobot2Line } from 'react-icons/ri';
-import { PageTitle } from '../components/page-title';
 import ContactForm from '../components/forms/contact-form';
 
 const contents = [
@@ -132,14 +130,14 @@ export default function Consultoria() {
         <article>
           <section className="mx-auto px-8 py-20 lg:py-28 bg-gray-50">
               <Typography
-                variant="h1"
-                color="light-green"
-                className="!text-5xl !leading-snug lg:!text-5xl text-center">
+              variant="h1"
+              color="light-green"
+              className="!text-5xl !leading-snug lg:!text-5xl text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Conoce nuestros paquetes TicsCode
               </Typography>
               <Typography
-                variant="lead"
-                className="mt-2 w-full !font-normal !text-blue-gray-500 text-center">
+              variant="lead"
+              className="mt-2 w-full !font-normal !text-blue-gray-500 text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Ofrecemos diversos planes de desarrollo web y móvil para cualquier organización o empresa. 
                 Nuestro equipos de desarrollo se encarga de diseñar las mejores soluciones de software para que se adapten a todas las necesidades de sus negocio.
 
@@ -153,15 +151,15 @@ export default function Consultoria() {
           </section>
           <section className=' bg-gray-50 px-4 pb-20 pt-1'>
             <Typography
-                  variant="h1"
-                  color="light-green"
-                  className="!text-5xl !leading-snug lg:!text-5xl text-center mb-20 ">
+              variant="h1"
+              color="light-green"
+              className="!text-5xl !leading-snug lg:!text-5xl text-center mb-20 " placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                   Paquetes TicsCode
             </Typography>
             <div className='w-full'>
             {app_contents.map(({img, title, desc, icon,items,idApp, price}) =>(
-              <AppsCard key={title} img={img} title={title} desc={desc} idApp={idApp} icon={icon} items={items} 
-              price={price}></AppsCard>
+              <AppsCard key={title} img={img} title={title} desc={desc} idApp={idApp} icon={icon} items={items}
+              price={price} color={''}></AppsCard>
             ))}
             </div>
             <ContactForm></ContactForm>

@@ -1,5 +1,5 @@
 'use client';
-import { inter } from '@/app/ui/font';
+import { inter } from '@/app/components/ui/font';
 import { Button, Card, CardBody, CardHeader, Input, Textarea, Typography } from '@material-tailwind/react';
 import ServiciosCard from '../components/cards/servicios-card';
 import { Footer } from '../components/ui/footer/footer';

@@ -12,7 +12,7 @@ interface AppsCardPropsType {
     title: string;
     desc: string;
     color: string;
-    icon: IconType;
+    icon: any;
     idApp: string;
     price: number;
     items: any[];

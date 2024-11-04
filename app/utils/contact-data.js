@@ -11,7 +11,7 @@ import {
 import { Button } from "@material-tailwind/react";
 import Link from "next/link";
   
-  export const contactData = [
+export const contactData = [
     {
       idContact: 1,
       title: "Sitio web básico",

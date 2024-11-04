@@ -1,18 +1,13 @@
 import { Button, Input, Textarea } from "@material-tailwind/react";
-import { PageTitle } from "../page-title";
+import { PageTitle } from "@/app/components/page-title";
 
-interface ServiciosCardPropsType {
-    nombres: string;
-    correo: string;
-    telefono: number;
-    mensaje: string;
-}
+
 
 export default function ContactForm(){
     return(
         <>
-            <PageTitle  heading="¡Escríbenos!">
-                    No dudes en comunicarte por todos nuestros canales y te responderemos inmediatamente para brindarte más información acerca de nuestros servicios.
+                    <PageTitle  heading="¡Escríbenos!" hijo={"No dudes en comunicarte por todos nuestros canales y te responderemos inmediatamente para brindarte más información acerca de nuestros servicios."}>
+                    
                     </PageTitle>
                     <form id="correosClientes" className="mx-auto mt-12 max-w-2xl text-center">
                         <Input variant="outlined" size="md" label="Nombres completos *" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}/>
