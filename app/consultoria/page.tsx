@@ -1,5 +1,4 @@
 'use client';
-
 import { BuildingStorefrontIcon, ComputerDesktopIcon, DevicePhoneMobileIcon, WindowIcon } from '@heroicons/react/16/solid';
 import {  Typography } from '@material-tailwind/react';
 import ConsultoriaCard from '../components/cards/consultoria-card';

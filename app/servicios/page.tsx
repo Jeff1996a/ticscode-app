@@ -5,17 +5,22 @@ import ServiciosCard from '../components/cards/servicios-card';
 import { Footer } from '../components/ui/footer/footer';
 import { PageTitle } from '../components/page-title';
 import ContactForm from '../components/forms/contact-form';
-
+interface ServiciosTypes {
+  img:string;
+  title: string;
+  subtitle: string;
+  desc: string[];
+}
 
 export default function Servicio() {
-  const data = [
+  const data : ServiciosTypes[]  = [
     {
         img:
         "https://ilimit.com/wp-content/uploads/2020/07/hostingcompartidoventajas.jpg",
         title: "Hosting y alojamiento web",
         subtitle:"Presencia en internet por medio de nuestros servicios",
         desc: ["Gestión de dominios", "Configuración de servidores web", "Configuración de servidor de aplicaciones","Configuración de servidor de correos",
-          ["Trabajamos con distintas infraestructuras como SaaS, PaaS o IaaS"]
+          "Trabajamos con distintas infraestructuras como SaaS, PaaS o IaaS"
         ]
     },
     {
@@ -34,8 +39,7 @@ export default function Servicio() {
       subtitle:"Soporte técnico.",
       desc: ["Configuración y mantenimiento de equipos de computo.","Instalación y configuración de Software", "Paquetes de mantenimiento para organizaciones y empresas"
       ]
-  },
-    ,
+    },
     {
         img:
         "https://icorp.com.mx/wp-content/uploads/2017/10/7-beneficios-de-contar-con-soporte-de-TI-Remoto-1.webp",
@@ -51,9 +55,9 @@ export default function Servicio() {
        <article>
           <section  className="mx-auto px-8 py-20 lg:py-28 bg-gray-50">
             <Typography
-                variant="h1"
-                color="light-green"
-                className="!text-5xl !leading-snug lg:!text-5xl text-center mb-10">
+              variant="h1"
+              color="light-green"
+              className="!text-5xl !leading-snug lg:!text-5xl text-center mb-10" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Servicios TicsCode
              </Typography>
              <div className='w-ful mt-10'>
