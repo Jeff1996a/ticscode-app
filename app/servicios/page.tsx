@@ -16,7 +16,7 @@ export default function Servicio() {
   const data : ServiciosTypes[]  = [
     {
         img:
-        "https://ilimit.com/wp-content/uploads/2020/07/hostingcompartidoventajas.jpg",
+        "/img/servicios1.jpg",
         title: "Hosting y alojamiento web",
         subtitle:"Presencia en internet por medio de nuestros servicios",
         desc: ["Gestión de dominios", "Configuración de servidores web", "Configuración de servidor de aplicaciones","Configuración de servidor de correos",
@@ -25,7 +25,7 @@ export default function Servicio() {
     },
     {
         img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTggw5FeF-pP-3sKwGiJUQjdH71lUl9Fh3OKw&s",
+        "/img/servicios2.jpg",
         title: "Cableado estructurado",
         subtitle:"Diseño e instalación de redes de datos empresariales.",
         desc: ["Diseño y configuración de redes LAN", "Seguridad en redes e internet", "Segmentación de red",
@@ -34,7 +34,7 @@ export default function Servicio() {
     },
     {
       img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqb_CHeUTuvHeM4Hn4KlYpJe0ARN817PjlAQ&s",
+      "/img/servicios3.jpg",
       title: "Reparación y mantenimiento",
       subtitle:"Soporte técnico.",
       desc: ["Configuración y mantenimiento de equipos de computo.","Instalación y configuración de Software", "Paquetes de mantenimiento para organizaciones y empresas"
@@ -42,7 +42,7 @@ export default function Servicio() {
     },
     {
         img:
-        "https://icorp.com.mx/wp-content/uploads/2017/10/7-beneficios-de-contar-con-soporte-de-TI-Remoto-1.webp",
+        "/img/servicios4.webp",
         title: "Asistencia y soporte remoto",
         subtitle:"Contamos con soporte técnico 24/7.",
         desc: ["Disponibilidad inmediata", "Asistencia remota en todos nuestros paquetes TicsCode","5 Cupones de asistencia gratuita en nuestros paquetes TicsCode",]

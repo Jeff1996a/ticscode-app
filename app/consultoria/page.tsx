@@ -42,7 +42,7 @@ const contents = [
 
 const app_contents = [
   {
-    img: "https://impulsapopular.com/wp-content/uploads/2014/06/iStock_86351731_LARGE.jpg",
+    img: "/img/consultoria1.jpg",
     title: "Sitio web básico",
     desc: "Sitio web con un diseño básico. Ideal para empresas u organizaciones que deseen dar a conocer sus productos o servicios en internet.",
  
@@ -60,7 +60,7 @@ const app_contents = [
     price: 250
   },
   {
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvLgWg5K7M_M7VcRMW0MbMM5SBzOQlt3Cokg&s",
+    img: "/img/consultoria2.jpg",
     title: "E-Commerce",
     desc: "Esta opción permite implementar su propia tienda en linea, conectar todas sus redes sociales e implementar un sistema de pagos online.",
     icon: <BuildingStorefrontIcon color='red' className="h-6 w-6 text-light-red-500 animate-bounce"/>,
@@ -80,7 +80,7 @@ const app_contents = [
     price:450
   },
   {
-    img: "https://designcodesolutions.com/wp-content/uploads/2019/08/top-view-dark-laptop-background-template-ok-1024x860.png",
+    img: "/img/consultoria3.png",
     title: "Aplicación web",
     desc: "Nuestro paquete corporativo es ideal para implementar una solución tecnológica que se adapte a su modelo de negocio",
     icon: <ComputerDesktopIcon color='green' className="h-6 w-6 text-light-green-500 animate-bounce"/>,
@@ -101,7 +101,7 @@ const app_contents = [
   
 
   {
-    img: "https://www.laprensagrafica.com/__export/1661038895122/sites/prensagrafica/img/2022/08/20/redes_sociales_1.jpg_554688467.jpg",
+    img: "/img/consultoria3.jpg",
     title: "Aplicación  móvil",
     desc: "Si desea ofrecer experiencias personalizadas e intuitivas a sus cliente en un dispositivo móvil esta opción es la indicada. ",
     icon: <DevicePhoneMobileIcon color='purple' className="h-6 w-6 text-light-purple-500 animate-bounce"/>,
