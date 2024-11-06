@@ -1,3 +1,4 @@
+'use client';
 import { Button, Card, CardBody, CardHeader, List, ListItem, Typography } from "@material-tailwind/react";
 import Image from "next/image";
 interface ServiciosCardPropsType {

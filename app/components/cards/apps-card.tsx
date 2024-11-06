@@ -1,11 +1,6 @@
-
 'use client';
-
-import { WindowIcon } from '@heroicons/react/16/solid';
 import { Button, Card, CardBody, CardHeader, Typography, List, ListItem, ListItemPrefix } from '@material-tailwind/react';
 import Image from  "next/image";
-import { IconType } from 'react-icons';
-import { FaCheck } from 'react-icons/fa';
 
 interface AppsCardPropsType {
     img: string;

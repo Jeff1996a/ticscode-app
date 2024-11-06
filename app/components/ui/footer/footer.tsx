@@ -1,3 +1,4 @@
+'use client';
 import { Typography, IconButton } from "@material-tailwind/react";
 import {FaFacebookF, FaInstagram, FaGithub, FaLinkedin, FaTiktok } from 'react-icons/fa';
 interface FooterPropsType {

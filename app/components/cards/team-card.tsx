@@ -1,3 +1,4 @@
+'use client';
 import { Card, Avatar, Typography } from "@material-tailwind/react";
 interface TeamCardPropsType {
   img: string;

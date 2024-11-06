@@ -1,7 +1,6 @@
+'use client';
 import { Button, Input, Textarea } from "@material-tailwind/react";
 import { PageTitle } from "@/app/components/page-title";
-
-
 
 export default function ContactForm(){
     return(

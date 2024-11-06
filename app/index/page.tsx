@@ -7,8 +7,6 @@ import {
     Typography,
     Button,
     IconButton,
-    Input,
-    Textarea,
     List,
     ListItem
 } from "@material-tailwind/react";
