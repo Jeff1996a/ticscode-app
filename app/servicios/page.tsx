@@ -63,7 +63,7 @@ export default function Servicio() {
              <Typography
               variant="lead"
               className="mt-2 w-full !font-normal !text-blue-gray-500 text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                Contamos con un equipo de profesionales para brindar soluciones innovadores en el área de cloud computing, alojamiento web,
+                Contamos con un equipo de profesionales para brindar soluciones  en el área de cloud computing, alojamiento web,
                 diseño y administración de redes de computo, reparación de computadoras y soporte técnico 24/7 incluído en todos nuestros planes.
               </Typography>
 
