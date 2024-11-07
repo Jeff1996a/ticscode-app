@@ -34,7 +34,7 @@ export default function Portafolio() {
             {data.map(({ imageLink }, index) => (
               <div key={index}>
                 <Image
-                  className="h-60 w-full max-w-full rounded-lg object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover: duration-300 ..."
+                  className="h-48 w-full max-w-full rounded-lg object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover: duration-300 ..."
                   src={imageLink}
                   alt="gallery-photo"
                 />
