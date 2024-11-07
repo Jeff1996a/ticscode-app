@@ -20,6 +20,7 @@ export default function ServiciosCard({ img, title, desc, subtitle }: ServiciosC
                 <Image
                   src={img}
                   alt="card-image"
+                  height={500}
                   className="h-full w-full object- opacity-80"/>
               </CardHeader>
               <CardBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
