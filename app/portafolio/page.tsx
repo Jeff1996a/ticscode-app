@@ -45,7 +45,6 @@ export default function Portafolio() {
             ))}
             </div>
           </section>
-         
         </article>
         <div className="bg-gray">
             <Footer />
