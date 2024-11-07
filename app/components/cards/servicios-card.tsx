@@ -21,7 +21,7 @@ export default function ServiciosCard({ img, title, desc, subtitle }: ServiciosC
                   src={img}
                   alt="card-image"
                   height={500}
-                  className="h-full w-full object opacity-80"/>
+                  className="h-full w-full object opacity-80 h-1/2"/>
               </CardHeader>
               <CardBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <Typography variant="h3" color="light-green" className="mb-4 animate-bounce" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
