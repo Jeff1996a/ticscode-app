@@ -25,7 +25,7 @@ export default function Servicio() {
     },
     {
         img:
-        "/img/servicios2.jpg",
+        "/img/servicios2.png",
         title: "Cableado estructurado",
         subtitle:"Diseño e instalación de redes de datos empresariales.",
         desc: ["Diseño y configuración de redes LAN", "Seguridad en redes e internet", "Segmentación de red",
