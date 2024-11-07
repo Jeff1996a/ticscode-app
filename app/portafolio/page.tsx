@@ -45,9 +45,7 @@ export default function Portafolio() {
             ))}
             </div>
           </section>
-          <section>
-            <TestimonialCard></TestimonialCard>
-          </section>
+         
         </article>
         <div className="bg-gray">
             <Footer />
