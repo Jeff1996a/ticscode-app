@@ -42,7 +42,7 @@ export default function Servicio() {
     },
     {
         img:
-        "/img/servicios4.webp",
+        "/img/servicios4.png",
         title: "Asistencia y soporte remoto",
         subtitle:"Contamos con soporte técnico 24/7.",
         desc: ["Disponibilidad inmediata", "Asistencia remota en todos nuestros paquetes TicsCode","5 Cupones de asistencia gratuita en nuestros paquetes TicsCode",]
