@@ -101,7 +101,7 @@ const app_contents = [
   
 
   {
-    img: "/img/consultoria4.jpg",
+    img: "/img/consultoria4.webp",
     title: "Aplicación  móvil",
     desc: "Si desea ofrecer experiencias personalizadas e intuitivas a sus cliente en un dispositivo móvil esta opción es la indicada. ",
     icon: <DevicePhoneMobileIcon color='purple' className="h-6 w-6 text-light-purple-500 animate-bounce"/>,
