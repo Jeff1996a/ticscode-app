@@ -60,6 +60,14 @@ export default function Servicio() {
               className="!text-5xl !leading-snug lg:!text-5xl text-center mb-10" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Servicios TicsCode
              </Typography>
+             <Typography
+              variant="lead"
+              className="mt-2 w-full !font-normal !text-blue-gray-500 text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                Ofrecemos diversos planes de desarrollo web y móvil para cualquier organización o empresa. 
+                Nuestro equipos de desarrollo se encarga de diseñar las mejores soluciones de software para que se adapten a todas las necesidades de sus negocio.
+
+              </Typography>
+
              <div className='w-ful mt-10'>
                 {data.map(({img, title, desc,subtitle}) =>(
                   <ServiciosCard key={title} img={img} title={title} subtitle={subtitle} desc={desc}
