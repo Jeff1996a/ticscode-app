@@ -30,7 +30,7 @@ export default function Portafolio() {
               className="mt-2 w-full !font-normal !text-blue-gray-500 text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Conoce todos nuestros clientes y soluciones realizadas por nuestro equipo de profesionales
               </Typography>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid mt-4 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {data.map(({ imageLink }, index) => (
               <div key={index}>
                 <Image
