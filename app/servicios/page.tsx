@@ -63,9 +63,8 @@ export default function Servicio() {
              <Typography
               variant="lead"
               className="mt-2 w-full !font-normal !text-blue-gray-500 text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                Ofrecemos diversos planes de desarrollo web y móvil para cualquier organización o empresa. 
-                Nuestro equipos de desarrollo se encarga de diseñar las mejores soluciones de software para que se adapten a todas las necesidades de sus negocio.
-
+                Contamos con un equipo de profesionales para brindar soluciones innovadores en el área de cloud computing, alojamiento web,
+                diseño y administración de redes de computo.
               </Typography>
 
              <div className='w-ful mt-10'>
