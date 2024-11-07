@@ -34,7 +34,7 @@ export default function Portafolio() {
             {data.map(({ imageLink }, index) => (
               <div key={index}>
                 <Image
-                  className="h-40 w-full max-w-full rounded-lg object-cover object-center"
+                  className="h-60 w-full max-w-full rounded-lg object-cover object-center"
                   src={imageLink}
                   alt="gallery-photo"
                 />
