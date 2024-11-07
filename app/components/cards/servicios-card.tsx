@@ -11,7 +11,7 @@ interface ServiciosCardPropsType {
 export default function ServiciosCard({ img, title, desc, subtitle }: ServiciosCardPropsType){
     return(
         <>
-            <Card className="absolute grid flex-row my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover: duration-300 ..."
+            <Card className="relative grid flex-row my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover: duration-300 ..."
              placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <CardHeader
             shadow={false}
@@ -21,7 +21,7 @@ export default function ServiciosCard({ img, title, desc, subtitle }: ServiciosC
                   src={img}
                   alt="card-image"
                   height={500}
-                  className="w-full object opacity-80 h-1/2"/>
+                  className="w-full object opacity-80"/>
               </CardHeader>
               <CardBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <Typography variant="h3" color="light-green" className="mb-4 animate-bounce" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
