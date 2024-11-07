@@ -25,7 +25,7 @@ import {
    
   export function TestimonialCard() {
     return (
-      <Card color="transparent" shadow={false} className="w-full max-w-[26rem]" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <Card color="transparent" shadow={false} className="w-1/3 max-w-[26rem]" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <CardHeader
                 color="transparent"
                 floated={false}
