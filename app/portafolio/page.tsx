@@ -2,6 +2,7 @@
 import {Typography } from '@material-tailwind/react';
 import Image from 'next/image';
 import { TestimonialCard } from '../components/cards/testimonial-card';
+import { Footer } from '../components/ui/footer/footer';
 
 export default function Portafolio() {
   const data = [
@@ -48,6 +49,9 @@ export default function Portafolio() {
             <TestimonialCard></TestimonialCard>
           </section>
         </article>
+        <div className="bg-gray">
+            <Footer />
+        </div>
       </div>
     </>
   );
