@@ -16,7 +16,7 @@ export default function ServiciosCard({ img, title, desc, subtitle }: ServiciosC
               <CardHeader
             shadow={false}
             floated={false}
-            className=" w-full m-0 shrink-0 rounded w-2/5" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            className="m-0 shrink-0 rounded w-screen" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <Image
                   src={img}
                   alt="card-image"
