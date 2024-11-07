@@ -44,6 +44,7 @@ export default function Portafolio() {
               </div>
             ))}
             </div>
+            <ContactForm></ContactForm>
           </section>
         </article>
         <div className="bg-gray">
