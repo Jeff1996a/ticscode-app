@@ -14,7 +14,7 @@ export default function Portafolio() {
     },
     {
       imageLink:
-        "/img/Azul.png",
+        "/img/ta.png",
     },
     
   ];
