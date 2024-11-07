@@ -27,7 +27,7 @@ export default function Servicio() {
         img:
         "/img/servicios2.png",
         title: "Cableado estructurado",
-        subtitle:"Diseño e instalación de redes de datos empresariales.",
+        subtitle:"Diseño e instalación de redes de computo.",
         desc: ["Diseño y configuración de redes LAN", "Seguridad en redes e internet", "Segmentación de red",
           "Enrutamiento y canalización de cableado", "Instalación y configuración de puntos de acceso"
         ]
@@ -44,7 +44,7 @@ export default function Servicio() {
         img:
         "/img/servicios4.png",
         title: "Asistencia y soporte remoto",
-        subtitle:"Contamos con soporte técnico 24/7.",
+        subtitle:"Contamos con asistencia remota 24/7.",
         desc: ["Disponibilidad inmediata", "Asistencia remota en todos nuestros paquetes TicsCode","5 Cupones de asistencia gratuita en nuestros paquetes TicsCode",]
     },
     
