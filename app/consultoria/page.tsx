@@ -80,7 +80,7 @@ const app_contents = [
     price:450
   },
   {
-    img: "/img/consultoria3.png",
+    img: "/img/consultoria3.jpg",
     title: "Aplicación web",
     desc: "Nuestro paquete corporativo es ideal para implementar una solución tecnológica que se adapte a su modelo de negocio",
     icon: <ComputerDesktopIcon color='green' className="h-6 w-6 text-light-green-500 animate-bounce"/>,
@@ -101,7 +101,7 @@ const app_contents = [
   
 
   {
-    img: "/img/consultoria3.jpg",
+    img: "/img/consultoria4.jpg",
     title: "Aplicación  móvil",
     desc: "Si desea ofrecer experiencias personalizadas e intuitivas a sus cliente en un dispositivo móvil esta opción es la indicada. ",
     icon: <DevicePhoneMobileIcon color='purple' className="h-6 w-6 text-light-purple-500 animate-bounce"/>,

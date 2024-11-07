@@ -12,6 +12,10 @@ export default function Portafolio() {
       imageLink:
         "/img/Azul.png",
     },
+    {
+      imageLink:
+        "/img/Azul.png",
+    },
     
   ];
   return (
