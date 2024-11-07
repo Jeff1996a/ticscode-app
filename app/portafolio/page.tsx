@@ -6,7 +6,7 @@ export default function Portafolio() {
   const data = [
     {
       imageLink:
-        "/img/EMSInicio.png",
+        "/img/EMS.png",
     },
     {
       imageLink:
