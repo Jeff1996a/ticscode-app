@@ -32,9 +32,9 @@ export default function Portafolio() {
             <Typography
               variant="lead"
               className="mt-2 w-full !font-normal !text-blue-gray-500 text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                Conoce todos nuestros clientes y soluciones realizadas por nuestro equipo de profesionales
+                Conoce todos los proyectos realizados por nuestro equipo de profesionales TicsCode
               </Typography>
-            <div className="grid mt-4 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid mt-4 mb-4 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {data.map(({ imageLink }, index) => (
               <div key={index}>
                 <Image
