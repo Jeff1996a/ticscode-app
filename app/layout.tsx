@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import {ComplexNavbar} from '@/app/components/ui/navbar/navbar';
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,7 +27,12 @@ export default function RootLayout({
         <div className={inter.className}>{children}</div>
        
       </body>
-      
+      <FloatingWhatsApp 
+          phoneNumber="5930979112697" 
+          accountName="TicsCode Ecuador" 
+          statusMessage="Soluciones tecnológicas"
+          chatMessage="¡Bienvenid@! ¿Cómo podemos ayudarte?"
+          placeholder="Escríbenos un mensaje"/>
     </html>
   );
 }
