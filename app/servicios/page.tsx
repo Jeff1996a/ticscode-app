@@ -16,7 +16,7 @@ export default function Servicio() {
   const data : ServiciosTypes[]  = [
     {
         img:
-        "/img/servicios1.jpg",
+        "/img/servicios1.png",
         title: "Hosting y alojamiento web",
         subtitle:"Presencia en internet por medio de nuestros servicios",
         desc: ["Gestión de dominios", "Configuración de servidores web", "Configuración de servidor de aplicaciones","Configuración de servidor de correos",
@@ -34,7 +34,7 @@ export default function Servicio() {
     },
     {
       img:
-      "/img/servicios3.jpg",
+      "/img/servicios3.png",
       title: "Reparación y mantenimiento",
       subtitle:"Soporte técnico.",
       desc: ["Configuración y mantenimiento de equipos de computo.","Instalación y configuración de Software", "Paquetes de mantenimiento para organizaciones y empresas"
