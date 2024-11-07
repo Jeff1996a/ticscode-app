@@ -1,5 +1,5 @@
 'use client';
-import { inter } from '@/app/components/ui/font';
+import {Typography } from '@material-tailwind/react';
 import Image from 'next/image';
 
 export default function Portafolio() {
@@ -46,7 +46,12 @@ export default function Portafolio() {
       <div className="absolute top-0 h-full w-full bg-cover bg-center opacity-90"> 
         <article>
           <section className="mx-auto px-8 py-20 lg:py-28 bg-gray-50">
-            <h1>Servicio</h1>
+          <Typography
+              variant="h1"
+              color="light-green"
+              className="!text-5xl !leading-snug lg:!text-5xl text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                Nuestros clientes
+            </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {data.map(({ imageLink }, index) => (
               <div key={index}>
