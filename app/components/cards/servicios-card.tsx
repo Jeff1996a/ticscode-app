@@ -16,17 +16,18 @@ export default function ServiciosCard({ img, title, desc, subtitle }: ServiciosC
               <CardHeader
             shadow={false}
             floated={false}
-            className=" w-full m-0 shrink-0 rounded h-1/2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            className=" w-full m-0 shrink-0 rounded" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                <Typography variant="h2" color="light-green" className="mb-4 animate-bounce" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  {title}
+                </Typography>
                 <Image
                   src={img}
                   alt="card-image"
                   height={500}
-                  className="w-full object opacity-80 h-1/2"/>
+                  className="w-full object opacity-80"/>
               </CardHeader>
               <CardBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                <Typography variant="h3" color="light-green" className="mb-4 animate-bounce" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                  {title}
-                </Typography>
+                
                 <Typography variant="h4" color="blue-gray" className="mb-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                   {subtitle}
                 </Typography>
