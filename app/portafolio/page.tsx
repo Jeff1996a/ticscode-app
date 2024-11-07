@@ -1,6 +1,7 @@
 'use client';
 import {Typography } from '@material-tailwind/react';
 import Image from 'next/image';
+import { TestimonialCard } from '../components/cards/testimonial-card';
 
 export default function Portafolio() {
   const data = [
@@ -42,6 +43,9 @@ export default function Portafolio() {
               </div>
             ))}
             </div>
+          </section>
+          <section>
+            <TestimonialCard></TestimonialCard>
           </section>
         </article>
       </div>
