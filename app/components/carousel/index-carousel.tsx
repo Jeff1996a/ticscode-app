@@ -4,7 +4,7 @@ import Image from  "next/image";
 
 export function CarouselWithContent() {
   return (
-    <Carousel transition={{ duration: 2 }} className="absolute top-0 h-full w-full bg-cover bg-center opacity-90" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+    <Carousel transition={{ duration: 1 }} className="absolute top-0 h-full w-full bg-cover bg-center opacity-90" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <div className="relative h-full w-full">
         <img
           src="https://sika.scene7.com/is/image/sika/glo-data-center-16:16-9?wid=1920&hei=1080&fit=crop%2C1"
