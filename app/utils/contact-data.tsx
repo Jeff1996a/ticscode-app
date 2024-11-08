@@ -10,8 +10,19 @@ import {
   } from "@heroicons/react/24/solid";
 import { Button } from "@material-tailwind/react";
 import Link from "next/link";
+
+interface ContactDataTypes {
+  idContact:number;
+  title: string;
+  icon: any;
+  color: any;
+  price: any;
+  description: string[];
+  button: any;
+}
+
   
-export const contactData = [
+export const contactData : ContactDataTypes[] = [
     {
       idContact: 1,
       title: "Sitio web básico",
@@ -30,7 +41,7 @@ export const contactData = [
         
       ],
       button : (
-        <Button className="object-bottom   transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ...">
+        <Button className="object-bottom   transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ..." placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <Link href="/consultoria/#sitioWeb">Conocer más</Link> </Button>
       )  
     },
@@ -51,7 +62,7 @@ export const contactData = [
         "1 Base de datos",
         ],
       button : (
-        <Button color="green" className=" bottom-0 object-bottom  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ...">
+        <Button color="green" className=" bottom-0 object-bottom  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ..." placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <a href="/consultoria/#ecommerce">Conocer más </a></Button>
       )
     },
@@ -72,7 +83,7 @@ export const contactData = [
         "1 Base de datos"
       ],
       button : (
-        <Button  className="object-bottom bottom-0 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ...">
+        <Button  className="object-bottom bottom-0 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ..." placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <a href="/consultoria/#appWeb">Conocer más</a> </Button>
       )
     },
@@ -94,7 +105,7 @@ export const contactData = [
         "1 Base de datos",
         ],
       button : (
-        <Button color="green" className="object-bottom  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ...">
+        <Button color="green" className="object-bottom  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ..." placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <a href="/consultoria/#appMovil">Conocer más </a></Button>
       )
     },
