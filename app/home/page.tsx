@@ -137,7 +137,6 @@ export default function Index(){
                             <IconButton
                                         variant="gradient"
                                         size="lg"
-                                        color={color}
                                         className="pointer-events-none mb-6 rounded-full animate-bounce" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                            >
                                 {React.createElement(icon, {
                                 className: "w-5 h-5"

@@ -11,18 +11,9 @@ import {
 import { Button } from "@material-tailwind/react";
 import Link from "next/link";
 
-interface ContactDataTypes {
-  idContact:number;
-  title: string;
-  icon: any;
-  color: any;
-  price: any;
-  description: string[];
-  button: any;
-}
 
   
-export const contactData : ContactDataTypes[] = [
+export const contactData = [
     {
       idContact: 1,
       title: "Sitio web básico",
