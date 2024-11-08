@@ -98,8 +98,6 @@ const app_contents = [
     idApp:"appWeb",
     price:600
   },
-  
-
   {
     img: "/img/consultoria4.webp",
     title: "Aplicación  móvil",
