@@ -25,14 +25,14 @@ export default function RootLayout({
           <ComplexNavbar></ComplexNavbar>
         </nav>
         <div className={inter.className}>{children}</div>
-       
-      </body>
-      <FloatingWhatsApp 
+        <FloatingWhatsApp 
           phoneNumber="5930979112697" 
           accountName="TicsCode Ecuador" 
           statusMessage="Soluciones tecnológicas"
           chatMessage="¡Bienvenid@! ¿Cómo podemos ayudarte?"
           placeholder="Escríbenos un mensaje"/>
+      </body>
+      
     </html>
   );
 }
