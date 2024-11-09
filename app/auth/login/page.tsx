@@ -1,3 +1,4 @@
+'use client';
 import {
     Card,
     CardHeader,
@@ -9,7 +10,7 @@ import {
     Button,
   } from "@material-tailwind/react";
    
-  export function LoginCard() {
+  export default function LoginCard() {
     return (
       <Card className="w-96" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <CardHeader
