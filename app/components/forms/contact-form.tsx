@@ -11,7 +11,7 @@ export default function ContactForm(){
                     <form id="correosClientes" className="mx-auto mt-12 max-w-2xl text-center">
                         <Input variant="outlined" size="md" label="Nombres completos *" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}/>
                         <div className="mt-5">
-                            <Input variant="outlined" size="md" label="Correo electrónico *" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}/>   
+                            <Input variant="outlined" size="md" label="Correo electrónico *" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
                         </div>
                         <div className="mt-5">
                             <Input variant="outlined" size="md" label="Teléfono *" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}/>   
