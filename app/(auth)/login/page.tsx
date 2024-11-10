@@ -18,7 +18,7 @@ import {
           <CardHeader
                   variant="gradient"
                   color="white"
-                  className="mb-4 grid h-28 place-items-center border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  className="mb-2 grid h-28 place-items-center border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Typography variant="h3" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Image
                             className="h-100 w-100 mt-0 mb-0 mx-auto object-cover object-center opacity-90"
@@ -32,9 +32,9 @@ import {
           <Typography
                           as="a"
                           href="#signup"
-                          variant="h3"
+                          variant="h4"
                           color="green"
-                          className="ml-1 font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+                          className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Bienvenidos
               </Typography>
             <Input label="Email" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
