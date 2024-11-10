@@ -33,7 +33,7 @@ import {
                           as="a"
                           href="#signup"
                           variant="h4"
-                          color="green"
+                          color="light-green"
                           className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Bienvenidos
               </Typography>
@@ -51,9 +51,9 @@ import {
               Don&apos;t have an account?
               <Typography
                           as="a"
-                          href="#signup"
+                          href="/register"
                           variant="small"
-                          color="green"
+                          color="light-green"
                           className="ml-1 font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Sign up
               </Typography>
