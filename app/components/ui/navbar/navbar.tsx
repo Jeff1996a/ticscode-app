@@ -415,11 +415,11 @@ export function ComplexNavbar() {
             type="button">
             <Link href="/register"><span>Sign in</span></Link>
           </button>
-          <button
+          <Button
             className="hidden select-none rounded-lg bg-gradient-to-tr from-light-green-500 to-light-green-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-            type="button">
+            type="button"placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Link href="/login"><span>Log in</span></Link>
-          </button>
+          </Button>
         </div>
       </div>
       <Collapse open={isNavOpen} className="overflow-scroll">
