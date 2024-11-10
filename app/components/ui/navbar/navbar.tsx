@@ -411,8 +411,7 @@ export function ComplexNavbar() {
         </IconButton>
         <div className="flex items-center gap-x-1">
           <Button
-            className="hidden px-4 py-2 font-sans text-xs font-bold text-center text-blue-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-green-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-            color='gray'
+            className="hidden px-4 py-2 font-sans text-xs font-bold from-light-gray-500 to-light-gray-500 text-center text-blue-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-green-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
             type="button" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Link href="/register"><span>Sign in</span></Link>
           </Button>
