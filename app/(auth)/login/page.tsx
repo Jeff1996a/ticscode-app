@@ -45,7 +45,7 @@ import {
                           as="a"
                           href="#signup"
                           variant="small"
-                          color="blue-gray"
+                          color="green"
                           className="ml-1 font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Sign up
               </Typography>
