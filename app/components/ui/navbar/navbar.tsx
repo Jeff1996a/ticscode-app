@@ -429,12 +429,12 @@ export function ComplexNavbar() {
             className=" px-4 py-2 font-sans text-xs font-bold text-center text-gray-400 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
             type="button"
             color='blue-gray'>
-            <span>Log In</span>
+            <span>Sign In</span>
           </button>
           <button
-            className="select-none rounded-lg bg-gradient-to-tr from-light-green-500 to-light-green-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+            className="select-none rounded-lg bg-gradient-to-tr from-green-500 to-green-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
             type="button">
-            <span>Sign in</span>
+            <span>Log in</span>
           </button>
         </div>
       </Collapse>
