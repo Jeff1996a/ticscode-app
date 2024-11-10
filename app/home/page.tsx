@@ -20,7 +20,7 @@ import { teamData } from "@/app/utils/team-data";
 import { TeamCard } from "@/app/components/cards/team-card";
 import { Footer } from "@/app/components/ui/footer/footer";
 import { CarouselWithContent} from "@/app/components/carousel/index-carousel"
-import ContactForm from "../components/forms/contact-form";
+import ContactForm from "@/app/components/forms/contact-form";
 
 export default function Index(){
     return(

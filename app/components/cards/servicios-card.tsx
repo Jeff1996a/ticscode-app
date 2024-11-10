@@ -20,6 +20,7 @@ export default function ServiciosCard({ img, title, desc, subtitle }: ServiciosC
                 <Image
                   src={img}
                   alt="card-image"
+                  width={500}
                   height={500}
                   className="w-full object-fill opacity-90"/>
               </CardHeader>

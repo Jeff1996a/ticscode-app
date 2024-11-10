@@ -134,7 +134,7 @@ const ConsultoriaItems = [
     color:"blue",
     description:
       "Diseñamos e implementamos su propio sitio web o tienda en linea responsive.",
-    url: "/consultoria"
+    url: "/home/consultoria"
   },
   {
     title: "Desarrollo de aplicaciones móviles",
@@ -142,7 +142,7 @@ const ConsultoriaItems = [
     color:"blue",
     description:
       "Desarrollamos su propia plataforma digital para dispositivos Android o iOS",
-      url: "/consultoria"
+      url: "/home/consultoria"
   },
   {
     title: "Proyectos ERP",
@@ -150,7 +150,7 @@ const ConsultoriaItems = [
     color:"blue",
     description:
       "Brindamos servicios de consultoría para optimizar su entorno empresarial mediante soluciones SAP.",
-    url: "/consultoria"
+    url: "/home/consultoria"
   },
 ];
 
@@ -159,20 +159,20 @@ const ServiciosItems = [
     {
       title: "Hosting web y cableado estructurado",
       icon:GlobeAmericasIcon,
-      url: "/servicios",
+      url: "/home/servicios",
       description:
         "Contamos con diferentes planes de alojamiento para su sitio web y diseño de redes de datos",
     },
     {
       title: "Mantenimiento de equipos informáticos",
       icon:WrenchScrewdriverIcon,
-      url: "/servicios",
+      url: "/home/servicios",
       description:
         "Realizamos mantenimiento y reparación de todo tipo de equipos informáticos",
     },
     {
       title: "Soporte remoto",
-      url: "/servicios",
+      url: "/home/servicios",
       icon:PhoneIcon,
       description:
         "Te ayudamos con asesoramiento remoto para solucionar cualquier problema tecnológico",
@@ -332,17 +332,17 @@ const navListItems = [
   {
     label: "Soluciones",
     icon: BriefcaseIcon,
-    url: "/portafolio"
+    url: "/home/portafolio"
   },
   {
     label: "Blog",
     icon: RocketLaunchIcon,
-    url:"/blog"
+    url:"/home/blog"
   },
   {
     label: "Contactos",
     icon: UserIcon,
-    url: "/contactos"
+    url: "/home/contactos"
   },
 
   

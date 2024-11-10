@@ -1,8 +1,8 @@
 'use client';
 import { Typography } from '@material-tailwind/react';
-import ServiciosCard from '../components/cards/servicios-card';
-import { Footer } from '../components/ui/footer/footer';
-import ContactForm from '../components/forms/contact-form';
+import ServiciosCard from '../../components/cards/servicios-card';
+import { Footer } from '../../components/ui/footer/footer';
+import ContactForm from '../../components/forms/contact-form';
 interface ServiciosTypes {
   img:string;
   title: string;

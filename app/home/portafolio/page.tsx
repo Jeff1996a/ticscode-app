@@ -1,8 +1,8 @@
 'use client';
 import {Typography } from '@material-tailwind/react';
 import Image from 'next/image';
-import { Footer } from '../components/ui/footer/footer';
-import ContactForm from '../components/forms/contact-form';
+import { Footer } from '../../components/ui/footer/footer';
+import ContactForm from '../../components/forms/contact-form';
 
 export default function Portafolio() {
   const data = [

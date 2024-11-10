@@ -1,9 +1,9 @@
 'use client';
 import { BuildingStorefrontIcon, ComputerDesktopIcon, DevicePhoneMobileIcon, WindowIcon } from '@heroicons/react/16/solid';
 import {  Typography } from '@material-tailwind/react';
-import ConsultoriaCard from '../components/cards/consultoria-card';
-import AppsCard from '../components/cards/apps-card';
-import { Footer } from '../components/ui/footer/footer';
+import ConsultoriaCard from '../../components/cards/consultoria-card';
+import AppsCard from '../../components/cards/apps-card';
+import { Footer } from '../../components/ui/footer/footer';
 import { FaAppStore, FaRegEdit, FaRegUser, FaWhatsapp } from 'react-icons/fa';
 import { MdOutlineDevicesOther, MdOutlineEmail, MdOutlineListAlt } from 'react-icons/md';
 import { IoLogoTux } from 'react-icons/io';
@@ -13,7 +13,7 @@ import { CiCreditCard1 } from 'react-icons/ci';
 import { FiDatabase } from 'react-icons/fi';
 import { AiOutlineAndroid } from 'react-icons/ai';
 import { RiRobot2Line } from 'react-icons/ri';
-import ContactForm from '../components/forms/contact-form';
+import ContactForm from '../../components/forms/contact-form';
 
 const contents = [
   {

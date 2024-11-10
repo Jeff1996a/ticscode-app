@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import {ComplexNavbar} from '@/app/components/ui/navbar/navbar';
-import { FloatingWhatsApp } from "react-floating-whatsapp";
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +18,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       
       <body className={inter.className}>
-        <nav className="fixed w-full z-20 top-0 left-0 mt-2 px-4">
-          <ComplexNavbar></ComplexNavbar>
-        </nav>
         <div className={inter.className}>{children}</div>
-        
       </body>
       
     </html>
