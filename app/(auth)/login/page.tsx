@@ -29,6 +29,14 @@ import {
             </Typography>
           </CardHeader>
           <CardBody className="flex flex-col gap-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Typography
+                          as="a"
+                          href="#signup"
+                          variant="h3"
+                          color="green"
+                          className="ml-1 font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+                Bienvenidos
+              </Typography>
             <Input label="Email" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
             <Input label="Password" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
             <div className="-ml-2.5">
