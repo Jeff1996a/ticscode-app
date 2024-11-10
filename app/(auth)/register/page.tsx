@@ -9,41 +9,58 @@ import {
     Checkbox,
     Button,
   } from "@material-tailwind/react";
+  import Image from "next/image";
    
-  export default function SignInCard() {
+  export default function LoginCard() {
     return (
-      <Card className="w-96" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <CardHeader
-                variant="gradient"
-                color="gray"
-                className="mb-4 grid h-28 place-items-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
-          <Typography variant="h3" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            Sign In
-          </Typography>
-        </CardHeader>
-        <CardBody className="flex flex-col gap-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <Input label="Email" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-          <Input label="Password" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-          <div className="-ml-2.5">
-            <Checkbox label="Remember Me" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-          </div>
-        </CardBody>
-        <CardFooter className="pt-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <Button variant="gradient" fullWidth placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            Sign In
-          </Button>
-          <Typography variant="small" className="mt-6 flex justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            Don&apos;t have an account?
-            <Typography
-                        as="a"
-                        href="#signup"
-                        variant="small"
-                        color="blue-gray"
-                        className="ml-1 font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
-              Sign up
+      <div className="relative w-full flex h-screen content-center items-center justify-center pt-16 pb-32">
+        <Card className="w-96 border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <CardHeader
+                  variant="gradient"
+                  color="white"
+                  className="mb-2 grid h-28 place-items-center border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Typography variant="h3" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Image
+                            className="h-100 w-100 mt-0 mb-0 mx-auto object-cover object-center opacity-90"
+                            src="/img/logo-no-background.png"
+                            width={250}
+                            height={250}
+                            alt="logo image"/>
             </Typography>
-          </Typography>
-        </CardFooter>
-      </Card>
+          </CardHeader>
+          <CardBody className="flex flex-col gap-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Typography
+                          as="a"
+                          href="#signup"
+                          variant="h4"
+                          color="green"
+                          className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+                Registrarse
+              </Typography>
+            <Input label="Email" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+            <Input label="Password" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+            <div className="-ml-2.5">
+              <Checkbox label="Remember Me" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+            </div>
+          </CardBody>
+          <CardFooter className="pt-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Button variant="gradient" color="green" fullWidth placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+              Crear cuenta
+            </Button>
+            <Typography variant="small" className="mt-6 flex justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+              Don&apos;t have an account?
+              <Typography
+                          as="a"
+                          href="/register"
+                          variant="small"
+                          color="green"
+                          className="ml-1 font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+                Sign up
+              </Typography>
+            </Typography>
+          </CardFooter>
+        </Card>
+      </div>
+      
     );
   }
