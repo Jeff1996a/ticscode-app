@@ -12,7 +12,8 @@ import {
    
   export default function LoginCard() {
     return (
-      <Card className="w-96" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <div className="relative w-full flex h-screen content-center items-center justify-center pt-16 pb-32">
+          <Card className="w-96" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <CardHeader
                 variant="gradient"
                 color="gray"
@@ -45,5 +46,7 @@ import {
           </Typography>
         </CardFooter>
       </Card>
+      </div>
+      
     );
   }
