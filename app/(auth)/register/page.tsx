@@ -11,7 +11,7 @@ import {
   } from "@material-tailwind/react";
   import Image from "next/image";
    
-  export default function LoginCard() {
+  export default function RegisterCard() {
     return (
       <div className="relative w-full flex h-screen content-center items-center justify-center pt-16 pb-32">
         <Card className="w-96 border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
