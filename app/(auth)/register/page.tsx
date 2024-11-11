@@ -13,12 +13,12 @@ import {
    
   export default function RegisterCard() {
     return (
-      <div className="relative w-full flex sm:mt-60 md:mt-36 h-screen content-center items-center justify-center pt-16 pb-32">
+      <div className="relative w-full flex sm:mt-60 md:mt-36 h-screen content-center items-center justify-center pt-10 pb-32">
         <Card className="w-2/4 border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <CardHeader
                   variant="gradient"
                   color="white"
-                  className="mb-1 grid h-28 place-items-center border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  className="mb-1 mt-20 grid h-28 place-items-center border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Typography variant="h3" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Image
                             className="h-100 w-100 mt-0 mb-0 mx-auto object-cover object-center opacity-90"
@@ -28,7 +28,7 @@ import {
                             alt="logo image"/>
             </Typography>
           </CardHeader>
-          <CardBody className="flex flex-col gap-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <CardBody className="flex flex-col gap-2 sm:w-full overflow-y-auto [&::-webkit-scrollbar-thumb]:rounded-xl [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-xl [&::-webkit-scrollbar-track]:bg-slate-100" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <Typography
                           as="a"
                           href="#signup"
@@ -37,7 +37,7 @@ import {
                           className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Crear cuenta
               </Typography>
-              <form className="mt-2 mb-1 w-full">
+              <form className="mt-2 mb-1 w-full sm:w-full">
                 <div className="grid grid-cols-1 gap-y-2 md:grid-cols-2 md:gap-x-2 md:grid-cols-2">
                   <Input label="Nombres" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
                   <Input label="Apellidos" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
