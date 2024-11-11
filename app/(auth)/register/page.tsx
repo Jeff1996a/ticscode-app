@@ -31,7 +31,7 @@ import {
           <CardBody className="flex flex-col gap-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
          
             <Typography color="gray" className="mt-1 font-normal"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-              Nice to meet you! Enter your details to register.
+             ¡Welcome! Enter your details to register.
             </Typography>
             <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
               <div className="mb-1 flex flex-col gap-6">
@@ -39,7 +39,7 @@ import {
                   Your Name
                 </Typography>
                 <Input
-                  size="lg"
+                  size="md"
                   placeholder="name@mail.com"
                   className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                   labelProps={{
@@ -49,7 +49,7 @@ import {
                   Your Email
                 </Typography>
                 <Input
-                  size="lg"
+                  size="md"
                   placeholder="name@mail.com"
                   className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                   labelProps={{
@@ -60,7 +60,7 @@ import {
                 </Typography>
                 <Input
                   type="password"
-                  size="lg"
+                  size="md"
                   placeholder="********"
                   className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                   labelProps={{
@@ -81,8 +81,6 @@ import {
                   </a>
                 </Typography>}
                 containerProps={{ className: "-ml-2.5" }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}              />
-        
-        
             </form>
           </CardBody>
           <CardFooter className="pt-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
