@@ -37,7 +37,7 @@ import {
                           className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Crear cuenta
             </Typography>
-            <div className="md:grid md:grid-cols-2 md:gap-2 gap-y-2">
+            <div className=" gap-y-2 md:grid md:grid-cols-2 md:gap-2 ">
               <Input label="Nombres" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               <Input label="Apellidos" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               <Input type="password" label="Contraseña" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
