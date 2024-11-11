@@ -29,12 +29,30 @@ import {
             </Typography>
           </CardHeader>
           <CardBody className="flex flex-col gap-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-         
-            <Typography color="gray" className="mt-1 font-normal"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-             ¡Welcome! Enter your details to register.
-            </Typography>
+              <Typography
+                          as="a"
+                          href="#signup"
+                          variant="h4"
+                          color="green"
+                          className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+                Crear cuenta
+              </Typography>
             <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
-              
+              <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div className="sm:col-span-3">
+                  <label htmlFor="first-name" className="block text-sm/6 font-medium text-gray-900">First name</label>
+                  <div className="mt-2">
+                    <Input type="text" name="first-name" id="first-name" autoComplete="given-name" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}/>
+                  </div>
+                </div>
+
+                <div className="sm:col-span-3">
+                  <label htmlFor="last-name" className="block text-sm/6 font-medium text-gray-900">Last name</label>
+                  <div className="mt-2">
+                    <Input type="text" name="last-name" id="last-name" autoComplete="family-name" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}/>
+                  </div>
+                </div>
+              </div>
               <Checkbox
                 label={<Typography
                   variant="small"
@@ -53,7 +71,7 @@ import {
           </CardBody>
           <CardFooter className="pt-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Button variant="gradient" color="green" fullWidth placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-              Crear cuenta
+              Registrarse
             </Button>
             <Typography color="gray" className="mt-4 text-center font-normal" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                Already have an account?{" "}
