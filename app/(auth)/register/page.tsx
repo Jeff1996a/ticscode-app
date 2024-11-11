@@ -39,18 +39,11 @@ import {
               </Typography>
             <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
               <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                <div className="sm:col-span-3">
-                  <label htmlFor="first-name" className="block text-sm/6 font-medium text-gray-900">First name</label>
-                  <div className="mt-2">
-                    <Input type="text" name="first-name" id="first-name" autoComplete="given-name" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}/>
-                  </div>
-                </div>
-
-                <div className="sm:col-span-3">
-                  <label htmlFor="last-name" className="block text-sm/6 font-medium text-gray-900">Last name</label>
-                  <div className="mt-2">
-                    <Input type="text" name="last-name" id="last-name" autoComplete="family-name" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}/>
-                  </div>
+                <div className="sm:cols-span-3 w-full max-w-sm min-w-[200px]">
+                  <label className="block mb-2 text-sm text-slate-600">
+                    Nombres
+                  </label>
+                  <input type="text" className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="Your Name" />
                 </div>
               </div>
               <Checkbox
