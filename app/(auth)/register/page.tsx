@@ -13,7 +13,7 @@ import {
    
   export default function RegisterCard() {
     return (
-      <div className="fixed w-full mt-10 flex h-screen content-center items-center justify-center pt-20 pb-32">
+      <div className="fixed w-full sm:mt-5 mt-10 flex h-screen content-center items-center justify-center pt-20 pb-32">
         <Card className="fixed w-96 border border-green-500 md:w-2/4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <CardHeader
                   variant="gradient"
