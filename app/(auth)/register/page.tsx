@@ -28,7 +28,7 @@ import {
                             alt="logo image"/>
             </Typography>
           </CardHeader>
-          <CardBody className="relative flex flex-col gap-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <CardBody className="relative flex flex-col gap-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Typography
                           as="a"
                           href="#signup"
