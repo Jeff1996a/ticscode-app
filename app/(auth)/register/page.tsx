@@ -13,12 +13,12 @@ import {
    
   export default function RegisterCard() {
     return (
-      <div className="fixed w-full  mt-10 flex h-screen content-center items-center justify-center pt-20 pb-20">
-        <Card className="fixed w-96 border border-green-500 md:w-2/4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <div className="relative w-full flex h-screen content-center items-center justify-center">
+        <Card className="w-96 border border-green-500 md:w-2/4 content-center items-center " placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <CardHeader
                   variant="gradient"
                   color="white"
-                  className="relative grid h-28 place-items-center border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  className="w-1/2 grid h-28 place-items-center border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Typography variant="h3" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Image
                             className="h-100 w-100 mt-0 mb-0 mx-auto object-cover object-center opacity-90"

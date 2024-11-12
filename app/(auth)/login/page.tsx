@@ -13,7 +13,7 @@ import {
    
   export default function LoginCard() {
     return (
-      <div className="relative w-full flex h-screen content-center items-center justify-center pt-16 pb-32">
+      <div className="relative w-full flex h-screen content-center items-center justify-center">
         <Card className="w-96 border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <CardHeader
                   variant="gradient"
