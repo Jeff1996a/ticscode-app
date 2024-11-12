@@ -27,7 +27,7 @@ export default function RegisterForm(){
               <div className="mt-2">
                 <Input type="password" label="Repetir contraseña" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               </div>
-              <div className="-ml-3 w-full col-span-2">
+              <div className="-ml-2.5 w-full col-span-2">
                 <Checkbox
                   label={<Typography
                     variant="small"

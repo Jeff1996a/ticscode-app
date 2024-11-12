@@ -38,8 +38,7 @@ import {
                           className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Crear cuenta
             </Typography>
-            <RegisterForm></RegisterForm>
-            
+            <RegisterForm></RegisterForm> 
           </CardBody>
           <CardFooter className="pt-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             
