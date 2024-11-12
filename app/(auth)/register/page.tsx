@@ -13,7 +13,7 @@ import {
    
   export default function RegisterCard() {
     return (
-      <div className="fixed w-full sm:mt-5 mt-10 flex h-screen content-center items-center justify-center pt-20 pb-32">
+      <div className="fixed w-full sm:mt-5 mt-10 flex h-screen content-center items-center justify-center pt-20 pb-20">
         <Card className="fixed w-96 border border-green-500 md:w-2/4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <CardHeader
                   variant="gradient"
@@ -70,7 +70,7 @@ import {
             <Button variant="gradient" color="green" fullWidth placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               Registrarse
             </Button>
-            <Typography variant="small" className="mt-3 flex justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Typography variant="small" className="mt-2 flex justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               Don&apos;t have an account?
               <Typography
                           as="a"
