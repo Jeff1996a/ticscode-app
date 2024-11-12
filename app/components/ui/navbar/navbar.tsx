@@ -334,11 +334,11 @@ const navListItems = [
     icon: BriefcaseIcon,
     url: "/home/portafolio"
   },
-  {
+  /*{
     label: "Blog",
     icon: RocketLaunchIcon,
     url:"/blog"
-  },
+  },*/
   {
     label: "Contactos",
     icon: UserIcon,
