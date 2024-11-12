@@ -18,7 +18,7 @@ import {
           <CardHeader
                   variant="gradient"
                   color="white"
-                  className="w-1/2 grid h-28 place-items-center border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  className="sm:w-1/2 w-1/2 grid h-28 place-items-center border border-green-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Typography variant="h3" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Image
                             className="h-100 w-100 mt-0 mb-0 mx-auto object-cover object-center opacity-90"
