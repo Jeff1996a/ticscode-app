@@ -1,4 +1,5 @@
 'use client';
+import RegisterForm from "@/app/components/forms/register-form";
 import {
     Card,
     CardHeader,
@@ -37,30 +38,7 @@ import {
                           className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Crear cuenta
             </Typography>
-            <form className="gap-2 md:grid md:grid-cols-2">
-              <div className="mt-2">
-                <Input label="Nombres" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              </div>
-              <div className="mt-2">
-                <Input label="Apellidos" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              </div>
-              <div className="mt-2">
-                <Input type="number" label="Teléfono" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              </div>
-              <div className="mt-2">
-                <Input type="date" label="Fecha de nacimiento" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />       
-              </div>
-              <div className="md:col-span-2 mt-2" >
-                <Input label="Email" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              </div>
-              <div className="mt-2">
-                <Input  type="password" label="Contraseña" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              </div>
-              <div className="mt-2">
-                <Input type="password" label="Repetir contraseña" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              </div>
-            </form>
-            
+            <RegisterForm></RegisterForm>
             <div className="-ml-3">
               <Checkbox
                 label={<Typography
