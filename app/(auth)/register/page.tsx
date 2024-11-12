@@ -37,7 +37,7 @@ import {
                           className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Crear cuenta
             </Typography>
-            <div className=" gap-y-2 md:grid md:grid-cols-2 md:gap-x-2 ">
+            <form className=" sm:gap-y-2 md:grid md:grid-cols-2 md:gap-x-2 ">
               <Input label="Nombres" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               <Input label="Apellidos" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               <Input type="password" label="Contraseña" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
@@ -47,7 +47,7 @@ import {
               </div>
               <Input type="number" label="Teléfono" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               <Input label="Password" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />       
-            </div>
+            </form>
             
             <div className="-ml-2.5">
               <Checkbox label="Remember Me" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
@@ -57,7 +57,7 @@ import {
             <Button variant="gradient" color="green" fullWidth placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               Registrarse
             </Button>
-            <Typography variant="small" className="mt-6 flex justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Typography variant="small" className="mt-3 flex justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               Don&apos;t have an account?
               <Typography
                           as="a"
