@@ -37,16 +37,27 @@ import {
                           className="ml-1 font-bold text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 Crear cuenta
             </Typography>
-            <form className=" gap-2 md:grid md:grid-cols-2">
-              <Input className="sm:gap-2" label="Nombres" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              <Input className="sm:gap-2" label="Apellidos" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              <Input className="sm:gap-2" type="password" label="Contraseña" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              <Input className="sm:gap-2" type="password" label="Repetir contraseña" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              <div className="md:col-span-2 sm:gap-2" >
-              <Input label="Email" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+            <form className="md:grid md:grid-cols-2">
+              <Input label="Nombres" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+              <div className="mt-2">
+                <Input label="Apellidos" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               </div>
-              <Input className="sm:gap-2" type="number" label="Teléfono" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
-              <Input className="sm:gap-2" type="date" label="Fecha de nacimiento" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />       
+              <div className="mt-2">
+                <Input  type="password" label="Contraseña" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+              </div>
+              <div className="mt-2">
+                <Input type="password" label="Repetir contraseña" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+              </div>
+              
+              <div className="md:col-span-2 mt-2" >
+                <Input label="Email" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+              </div>
+              <div className="mt-2">
+                <Input type="number" label="Teléfono" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+              </div>
+              <div className="mt-2">
+                <Input type="date" label="Fecha de nacimiento" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />       
+              </div>
             </form>
             
             <div className="-ml-2.5">
