@@ -11,7 +11,7 @@ import {
   } from "@material-tailwind/react";
   import Image from "next/image";
    
-  export default function LoginCard() {
+  export default function RegisterCard() {
     return (
       <div className="fixed w-full mt-10 flex h-screen content-center items-center justify-center pt-20 pb-32">
         <Card className="fixed w-96 border border-green-500 md:w-2/4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
@@ -55,7 +55,7 @@ import {
           </CardBody>
           <CardFooter className="pt-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <Button variant="gradient" color="green" fullWidth placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-              Iniciar sesión
+              Registrarse
             </Button>
             <Typography variant="small" className="mt-6 flex justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               Don&apos;t have an account?
