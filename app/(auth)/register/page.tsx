@@ -46,7 +46,7 @@ import {
               Don&apos;t have an account?
               <Typography
                           as="a"
-                          href="/register"
+                          href="/login"
                           variant="small"
                           color="green"
                           className="ml-1 font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
