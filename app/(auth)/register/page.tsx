@@ -38,7 +38,9 @@ import {
                 Crear cuenta
             </Typography>
             <form className="gap-2 md:grid md:grid-cols-2">
-              <Input label="Nombres" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+              <div className="mt-2">
+                <Input label="Nombres" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
+              </div>
               <div className="mt-2">
                 <Input label="Apellidos" size="lg" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               </div>
