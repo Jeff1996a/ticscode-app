@@ -1,5 +1,5 @@
 'use client';
-import { Button, Input} from "@material-tailwind/react";
+import { Button, Checkbox, Input, Typography} from "@material-tailwind/react";
 
 export default function RegisterForm(){
     return(
@@ -27,7 +27,27 @@ export default function RegisterForm(){
               <div className="mt-2">
                 <Input type="password" label="Repetir contraseña" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               </div>
-              
+              <div className="-ml-3 w-full col-span-2">
+                <Checkbox
+                  label={<Typography
+                    variant="small"
+                    color="gray"
+                    className="flex items-center font-normal" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                >
+                    I agree the
+                    <a
+                      href="#"
+                      className="font-medium transition-colors hover:text-gray-900"
+                    >
+                      &nbsp;Terms and Conditions
+                    </a>
+                  </Typography>}
+                  containerProps={{ className: "-ml-2.5" }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}              />
+              </div>
+              <div className="w-full justify-center text-center content-center col-span-2">
+                <Button variant="gradient" color="green" fullWidth placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  Registrarse
+                </Button>
+              </div>
             </form>
         </>
     );
