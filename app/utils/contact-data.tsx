@@ -41,7 +41,7 @@ export const contactData : ContactTypes[] = [
       ],
       button : (
         <Button className="object-bottom   transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ..." placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <Link href="/consultoria/#sitioWeb">Conocer más</Link> </Button>
+          <Link href="/home/consultoria/#sitioWeb">Conocer más</Link> </Button>
       )  
     },
     {
@@ -62,7 +62,7 @@ export const contactData : ContactTypes[] = [
         ],
       button : (
         <Button color="green" className=" bottom-0 object-bottom  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ..." placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <a href="/consultoria/#ecommerce">Conocer más </a></Button>
+          <a href="/home/consultoria/#ecommerce">Conocer más </a></Button>
       )
     },
     {
@@ -83,7 +83,7 @@ export const contactData : ContactTypes[] = [
       ],
       button : (
         <Button  className="object-bottom bottom-0 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ..." placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <a href="/consultoria/#appWeb">Conocer más</a> </Button>
+          <a href="/home/consultoria/#appWeb">Conocer más</a> </Button>
       )
     },
     
@@ -105,7 +105,7 @@ export const contactData : ContactTypes[] = [
         ],
       button : (
         <Button color="green" className="object-bottom  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 ..." placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <a href="/consultoria/#appMovil">Conocer más </a></Button>
+          <a href="/home/consultoria/#appMovil">Conocer más </a></Button>
       )
     },
     
