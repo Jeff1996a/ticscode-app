@@ -1,11 +1,10 @@
 import {z} from "zod";
-import validator from "validator";
 
 export const UserSchema = z.object({
     id: z.string(),
     nombres: z.string().min(5),
     apellidos: z.string().min(5),
-    telefono: z.string().refine(validator.isMobilePhone),
+    telefono: z.string(),
     email: z.string().email()
 }) 
 
