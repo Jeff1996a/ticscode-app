@@ -3,7 +3,7 @@ import { UserType } from "@/app/types/user"
 import {conn} from "@/app/utils/connectiondb"
 
 export async function GET(request: NextRequest){
-    
+
     try {
         await conn.connect();
 
@@ -12,7 +12,7 @@ export async function GET(request: NextRequest){
 
         // Choose a name for your collection
         const collection = database.collection("usuario");
-        const allData = await collection.find({}).toArray();
+        const allData = await collection.find().toArray();
 
          return NextResponse.json(allData);
     } catch (error) {
