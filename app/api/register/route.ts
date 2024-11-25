@@ -3,6 +3,7 @@ import { UserType } from "@/app/types/user"
 import {conn} from "@/app/utils/connectiondb"
 
 export async function GET(request: NextRequest){
+    
     try {
         await conn.connect();
 
