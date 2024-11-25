@@ -15,6 +15,7 @@ export async function GET(request: NextRequest){
         const allData = await collection.find().toArray();
 
          return NextResponse.json(allData);
+         
     } catch (error) {
         return NextResponse.json({ message: "Something went wrong!" });
     } finally {
