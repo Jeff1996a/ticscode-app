@@ -2,7 +2,7 @@ import {NextRequest, NextResponse} from "next/server";
 import { Usuario } from "@/app/types/usuario"
 import {conn} from "@/app/utils/connectiondb"
 
-/*export async function GET(request: NextRequest){
+export async function GET(request: NextRequest){
 
     try {
         await conn.connect();
@@ -12,7 +12,7 @@ import {conn} from "@/app/utils/connectiondb"
 
         // Choose a name for your collection
         const collection = database.collection("usuario");
-        const allData = await collection.find({}).toArray();
+        const allData = await collection.find().toArray();
 
          return NextResponse.json(allData);
 
@@ -21,22 +21,36 @@ import {conn} from "@/app/utils/connectiondb"
     } finally {
         await conn.close();
     }
-}*/
-export default function handler(req, res) {
-    const { method } = req;
-  
-    switch (method) {
-      case 'POST':
-        const data = req.body;
-        // Process the data
-        res.status(200).json({ message: 'Data received', data });
-        break;
-      case 'GET':
-        res.status(200).json({ message: 'This is a GET request' });
-        break;
-      default:
-        res.status(405).json({ error: 'Method not allowed' });
-        break;
-    }
 }
+
+export async function POST(request: NextRequest){
+
+        const userData = await request.json();
+
+        try {
+            await conn.connect();
+    
+            // Choose a name for your database
+            const database = conn.db("ticscodeApp");
+    
+            // Choose a name for your collection
+            const collection = database.collection("usuario");
+            const result = await collection.insertOne(userData);
+
+            if(result != 0){
+                return NextResponse.json({message:"Registro ingresado correctamente"});
+            }
+            else{
+                return NextResponse.json({message:"Error al ingresar el registro"});
+            }   
+    
+        } catch (error) {
+            return NextResponse.json({ message: "Something went wrong!" });
+        } finally {
+            await conn.close();
+        }
+        
+        return NextResponse.json(userData);
+}
+
 
