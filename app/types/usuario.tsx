@@ -20,7 +20,7 @@ const usuarioSchema = new Schema({
         required: [true, "Email is required"],
         unique: true,
         validate: {
-          validator: function(value) {
+          validator: function(value: string) {
             return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
           },
           message: "Invalid email address format",
@@ -32,7 +32,7 @@ const usuarioSchema = new Schema({
           validator: function(v) {
             return /\d{3}-\d{3}-\d{4}/.test(v);
           },
-          message: props => `${props.value} is not a valid phone number!`
+          message: (props: { value: any; }) => `${props.value} is not a valid phone number!`
         },
         required: [true, 'User phone number required'],
         min: [10, "Must be at least 10 digits" ],
