@@ -29,7 +29,7 @@ const usuarioSchema = new Schema({
     telefono: {
         type: String,
         validate: {
-          validator: function(v) {
+          validator: function(v: string) {
             return /\d{3}-\d{3}-\d{4}/.test(v);
           },
           message: (props: { value: any; }) => `${props.value} is not a valid phone number!`
