@@ -49,8 +49,6 @@ export async function POST(request: NextRequest){
         } finally {
             await conn.close();
         }
-        
-        return NextResponse.json(userData);
 }
 
 
