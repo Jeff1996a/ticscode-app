@@ -15,9 +15,8 @@ async function handleSubmit(event:any){
 
         if (!response.ok) {
             console.log("falling over")
-            throw new Error(`response status: ${response}`);
+            throw new Error(`response status: ${response.status}`);
         }
-        
         const responseData = await response.json();
         console.log(responseData['message'])
 
