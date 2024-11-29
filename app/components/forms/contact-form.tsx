@@ -57,15 +57,15 @@ export default function ContactForm(){
            <PageTitle  heading="¡Escríbenos!" hijo={"No dudes en comunicarte por todos nuestros canales y te responderemos inmediatamente para brindarte más información acerca de nuestros servicios."}>    
             </PageTitle>
             <form id="correosClientes" onSubmit={handleSubmit} className="mx-auto mt-12 max-w-2xl text-center">
-                <Input variant="outlined" size="md" label="Nombres completos *" name="nombres" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>
+                <Input variant="outlined" size="md" label="Nombres completos" name="nombres" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>
                     <div className="mt-5">
-                        <Input variant="outlined" size="md" label="Correo electrónico *" name="email" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
+                        <Input variant="outlined" size="md" label="Correo electrónico" name="email" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
                     </div>
                     <div className="mt-5">
-                        <Input variant="outlined" size="md" label="Teléfono *" name="telefono" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
+                        <Input variant="outlined" size="md" label="Teléfono" name="telefono" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
                         </div>
                     <div className="mt-5">
-                        <Textarea variant="outlined" size="md" label="Mensaje *" name="mensaje" rows={8} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} required />  
+                        <Textarea variant="outlined" size="md" label="Mensaje" name="mensaje" rows={8} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} required />  
                     </div>
                     <Button type="submit" color="light-green" variant="gradient" size="lg" className="mt-8 mb-10"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
                         Enviar
