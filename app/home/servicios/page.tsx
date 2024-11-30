@@ -3,6 +3,7 @@ import { Typography } from '@material-tailwind/react';
 import ServiciosCard from '../../components/cards/servicios-card';
 import { Footer } from '../../components/ui/footer/footer';
 import ContactForm from '../../components/forms/contact-form';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 interface ServiciosTypes {
   img:string;
   title: string;
@@ -78,7 +79,12 @@ export default function Servicio() {
             <Footer />
         </div>
       </div>
-      
+      <FloatingWhatsApp 
+          phoneNumber="5930979112697" 
+          accountName="TicsCode Ecuador" 
+          statusMessage="Soluciones tecnológicas"
+          chatMessage="¡Bienvenid@! ¿Cómo podemos ayudarte?"
+          placeholder="Escríbenos un mensaje"/>
     </>
   );
 }

@@ -14,6 +14,7 @@ import { FiDatabase } from 'react-icons/fi';
 import { AiOutlineAndroid } from 'react-icons/ai';
 import { RiRobot2Line } from 'react-icons/ri';
 import ContactForm from '../../components/forms/contact-form';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 const contents = [
   {
@@ -168,6 +169,12 @@ export default function Consultoria() {
             <Footer />
         </div>
       </div>
+      <FloatingWhatsApp 
+          phoneNumber="5930979112697" 
+          accountName="TicsCode Ecuador" 
+          statusMessage="Soluciones tecnológicas"
+          chatMessage="¡Bienvenid@! ¿Cómo podemos ayudarte?"
+          placeholder="Escríbenos un mensaje"/>
     </>
   );
 }

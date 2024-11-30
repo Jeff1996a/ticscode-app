@@ -3,6 +3,7 @@ import {Typography } from '@material-tailwind/react';
 import Image from 'next/image';
 import { Footer } from '../../components/ui/footer/footer';
 import ContactForm from '../../components/forms/contact-form';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 export default function Portafolio() {
   const data = [
@@ -46,14 +47,20 @@ export default function Portafolio() {
                 />
               </div>
             ))}
-            </div>
-            <ContactForm></ContactForm>
+           </div>
+            <ContactForm></ContactForm> 
           </section>
         </article>
         <div className="bg-gray">
             <Footer />
         </div>
       </div>
+      <FloatingWhatsApp 
+          phoneNumber="5930979112697" 
+          accountName="TicsCode Ecuador" 
+          statusMessage="Soluciones tecnológicas"
+          chatMessage="¡Bienvenid@! ¿Cómo podemos ayudarte?"
+          placeholder="Escríbenos un mensaje"/>
     </>
   );
 }

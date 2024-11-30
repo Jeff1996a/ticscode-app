@@ -4,12 +4,17 @@ import { PageTitle } from "@/app/components/page-title";
 import { DialogBox } from "../ui/navbar/modal";
 import React, { useRef } from "react";
 import { InputPhoneCountryCode } from "../ui/input-phone/input-phone";
+import { useForm } from "react-hook-form";
 
 export default function ContactForm(){
+
+    const {reset} = useForm();
 
     const[open, setOpen] = React.useState(false);
     const[mensaje, setMensaje] = React.useState("");
     const [paisCliente, setPaisCliente] = React.useState("");
+    const [nombres, setNombres] = React.useState("")
+   
 
     async function cerrarModal(){
         if(open == true){
@@ -17,8 +22,12 @@ export default function ContactForm(){
         }
     }
 
-    async function handlePhoneNumberChange(pais: any){
+    function handlePhoneNumberChange(pais: any){
         setPaisCliente(pais);
+    }
+
+    async function handleNombresChange(e:any){
+        setNombres("")
     }
 
     //Función para manejar el envío de correos
@@ -58,14 +67,17 @@ export default function ContactForm(){
             alert("Error, please try resubmitting the form");
         }
     }
-    
+   
+
 
     return(
         <>
            <PageTitle  heading="¡Escríbenos!" hijo={"No dudes en comunicarte por todos nuestros canales y te responderemos inmediatamente para brindarte más información acerca de nuestros servicios."}>    
             </PageTitle>
             <form id="correosClientes" onSubmit={handleSubmit} className="mx-auto mt-12 max-w-2xl text-center">
-                <Input variant="outlined" size="md" label="Nombres completos" name="nombres" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>
+                <Input variant="outlined" size="md" label="Nombres completos" 
+                name="nombres"  
+                 onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>
                     <div className="mt-5">
                         <Input variant="outlined" size="md" label="Correo electrónico" name="email" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
                     </div>
@@ -91,7 +103,9 @@ export default function ContactForm(){
                         </Typography>}
                         containerProps={{ className: "-ml-2.5" }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}              />
                     </div>
-                    <Button type="submit" color="light-green" variant="gradient" size="lg" className="mt-8 mb-10"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
+                    <Button type="submit"
+                    onClick={() => reset()}
+                    color="light-green" variant="gradient" size="lg" className="mt-8 mb-10"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
                         Enviar
                     </Button>
             </form>     
