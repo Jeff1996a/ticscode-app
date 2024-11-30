@@ -33,7 +33,7 @@ export function InputPhoneCountryCode({handleChangeCountry}:PhoneProps) {
   return (
     <div className="w-full max-w-[24rem]">
      
-      <div className="relative flex w-full">
+      <div className="relative flex w-full mt-2">
         <Menu placement="bottom-start">
           <MenuHandler>
             <Button

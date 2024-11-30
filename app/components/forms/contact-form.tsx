@@ -26,10 +26,6 @@ export default function ContactForm(){
         setPaisCliente(pais);
     }
 
-    async function handleNombresChange(e:any){
-        setNombres("")
-    }
-
     //Función para manejar el envío de correos
     async function handleSubmit(event:any){
 
@@ -60,6 +56,7 @@ export default function ContactForm(){
                 setOpen(true);
 
                 setMensaje("¡Mensaje exitoso! Pronto uno de nuestros asesores se comunicará con usted.");
+
             }
         } catch (err) {
     
@@ -72,16 +69,16 @@ export default function ContactForm(){
 
     return(
         <>
-           <PageTitle  heading="¡Escríbenos!" hijo={"No dudes en comunicarte por todos nuestros canales y te responderemos inmediatamente para brindarte más información acerca de nuestros servicios."}>    
+           <PageTitle  heading="¡Contáctos!" hijo={"Escríbanos por cualquiera de nuestros canales y uno de nuestros asesores se comuncará para brindarle más información acerca de nuestros servicios."}>    
             </PageTitle>
             <form id="correosClientes" onSubmit={handleSubmit} className="mx-auto mt-12 max-w-2xl text-center">
-                <Input variant="outlined" size="md" label="Nombres completos" 
+                <Input variant="outlined"  size="md" label="Nombres completos" 
                 name="nombres"  
                  onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>
                     <div className="mt-5">
                         <Input variant="outlined" size="md" label="Correo electrónico" name="email" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
                     </div>
-                    <div className="mt-2 w-100">
+                    <div className="mt-4 w-100">
                         <InputPhoneCountryCode handleChangeCountry={handlePhoneNumberChange}></InputPhoneCountryCode>
                     </div>
                     <div className="mt-5">
