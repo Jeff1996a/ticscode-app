@@ -9,8 +9,12 @@ import {
   Typography,
 } from "@material-tailwind/react";
  
-const COUNTRIES = ["Ecuador (+593)","France (+33)", "Germany (+49)", "Spain (+34)", "USA (+1)"];
-const CODES = ["+593","+33", "+49", "+34", "+1"];
+const COUNTRIES = ["Argentina (+54)","Bolivia (+591)","Brasil (+55)","Colombia (+57)","Costa Rica (+506)",
+  "Cuba (+53)", "Chile (+56)","Ecuador (+593)", "España (+34)",
+  "México (+52)", "Perú (+51)","Uruguay (+598)", "USA (+1)"];
+const CODES = ["+54", "+591", "+55", "+57","+506",
+   "+53", "+56", "+593", "+34", 
+  "+52", "+51", "+598", "+1"];
 
 interface PhoneProps{
   handleChangeCountry: any;
