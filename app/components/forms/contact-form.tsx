@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 
 export default function ContactForm(){
 
-    const {reset} = useForm();
+    const {reset, register} = useForm();
 
     const[open, setOpen] = React.useState(false);
     const[mensaje, setMensaje] = React.useState("");
@@ -57,6 +57,7 @@ export default function ContactForm(){
 
                 setMensaje("¡Mensaje exitoso! Pronto uno de nuestros asesores se comunicará con usted.");
 
+                reset();
             }
         } catch (err) {
     
@@ -73,7 +74,7 @@ export default function ContactForm(){
             </PageTitle>
             <form id="correosClientes" onSubmit={handleSubmit} className="mx-auto mt-12 max-w-2xl text-center">
                 <Input variant="outlined"  size="md" label="Nombres completos" 
-                name="nombres"  
+                {...register("nombres")}
                  onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>
                     <div className="mt-5">
                         <Input variant="outlined" size="md" label="Correo electrónico" name="email" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
@@ -101,7 +102,6 @@ export default function ContactForm(){
                         containerProps={{ className: "-ml-2.5" }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}              />
                     </div>
                     <Button type="submit"
-                    onClick={() => reset()}
                     color="light-green" variant="gradient" size="lg" className="mt-8 mb-10"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
                         Enviar
                     </Button>
