@@ -1,8 +1,16 @@
 'use client';
 import { Button, Checkbox, Input, Typography} from "@material-tailwind/react";
 import { InputPhoneCountryCode } from "../ui/input-phone/input-phone";
+import React from "react";
 
 export default function RegisterForm(){
+
+    const [pais, setPaisCliente] = React.useState("")
+    
+    async function handlePhoneNumberChange(pais: any){
+      setPaisCliente(pais);
+    }
+
     return(
         <>
            
@@ -14,7 +22,7 @@ export default function RegisterForm(){
                 <Input label="Apellidos" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               </div>
               <div className="mt-2">
-                <InputPhoneCountryCode></InputPhoneCountryCode>
+                <InputPhoneCountryCode handleChangeCountry={handlePhoneNumberChange}></InputPhoneCountryCode>
               </div>
               <div className="mt-2">
                 <Input type="date" label="Fecha de nacimiento" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />       

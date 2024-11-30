@@ -13,9 +13,8 @@ const COUNTRIES = ["Ecuador (+593)","France (+33)", "Germany (+49)", "Spain (+34
 const CODES = ["+593","+33", "+49", "+34", "+1"];
 
 interface PhoneProps{
-  handleChangeCountry: (seleccion:string) => void;
+  handleChangeCountry: any;
 }
-
 
  
 export function InputPhoneCountryCode({handleChangeCountry}:PhoneProps) {
