@@ -1,3 +1,4 @@
+"use server";
 import { NextRequest, NextResponse } from "next/server";
 const nodemailer = require("nodemailer");
 
@@ -11,6 +12,7 @@ export async function POST(request: NextRequest){
     const nombres = formData.get("nombres");
     const email = formData.get("email");
     const telefono = formData.get("telefono");
+    const paisCliente = formData.get("paisCliente");
     const mensaje = formData.get("mensaje");
 
     //Crear un objeto nodemailer para manejar el envío de correos
@@ -36,6 +38,7 @@ export async function POST(request: NextRequest){
             <p>Cliente: ${nombres} </p>
             <p>Email: ${email} </p>
             <p>Teléfono: ${telefono} </p>
+            <p>País: ${paisCliente} </p>
             <p>Mensaje: ${mensaje} </p>
             `,
         });
