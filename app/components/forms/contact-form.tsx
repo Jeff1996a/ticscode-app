@@ -2,22 +2,20 @@
 import { Button, Checkbox, Input, Textarea, Typography } from "@material-tailwind/react";
 import { PageTitle } from "@/app/components/page-title";
 import { DialogBox } from "../ui/navbar/modal";
-import React, { useRef } from "react";
+import React, { SyntheticEvent, useRef } from "react";
 import { InputPhoneCountryCode } from "../ui/input-phone/input-phone";
 import { useForm } from "react-hook-form";
 import { EmailTemplateProps, emailTemplateSchema } from "@/app/types/emailTemplate";
 import { zodResolver } from "@hookform/resolvers/zod";
 export default function ContactForm(){
 
-    const {reset, handleSubmit, register, formState: { errors },
+    const {reset, handleSubmit, register,getValues, formState: { errors },
      } = useForm<EmailTemplateProps>({
     resolver: zodResolver(emailTemplateSchema)});
 
     const[open, setOpen] = React.useState(false);
     const[mensaje, setMensaje] = React.useState("");
     const [paisCliente, setPaisCliente] = React.useState("");
-    const [nombres, setNombres] = React.useState("")
-   
 
     async function cerrarModal(){
         if(open == true){
@@ -30,10 +28,21 @@ export default function ContactForm(){
     }
 
     //Función para manejar el envío de correos
-    const submitForm = async(event:any) =>{
+    const submitForm = async (values: EmailTemplateProps ) =>{
     
-        const formData = new FormData(event.target);
+        const nombres = getValues("nombres");
+        const email  = getValues("email");
+        const telefono = getValues("telefono");
+        const mensaje = getValues("mensaje");  
 
+        const formData = new FormData()
+
+        console.log(values)
+
+        formData.append("nombres", nombres);
+        formData.append("email", email);
+        formData.append("telefono", telefono);
+        formData.append("mensaje", mensaje);
         formData.append("paisCliente", paisCliente);
     
         try {
@@ -56,7 +65,7 @@ export default function ContactForm(){
 
                 setOpen(true);
 
-                setMensaje("¡Mensaje exitoso! Pronto uno de nuestros asesores se comunicará con usted.");
+                setMensaje("¡Mensaje enviado! Pronto uno de nuestros asesores se comunicará con usted.");
 
                 reset();
             }
@@ -74,11 +83,16 @@ export default function ContactForm(){
            <PageTitle  heading="¡Contáctos!" hijo={"Escríbanos por cualquiera de nuestros canales y uno de nuestros asesores se comuncará para brindarle más información acerca de nuestros servicios."}>    
             </PageTitle>
             <form id="correosClientes" onSubmit={handleSubmit(submitForm)} className="mx-auto mt-12 max-w-2xl text-center">
-                <Input variant="outlined"  size="md" label="Nombres completos" 
-                {...register("nombres")}
-                 onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>
+                    <div>
+                        <Input variant="outlined"  size="md" label="Nombres completos" 
+                        {...register("nombres")} 
+                        onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>
+                        {errors?.nombres && <span className="text-red-500 text-xs">{errors.nombres.message}</span>}
+                    </div>
                     <div className="mt-5">
-                        <Input variant="outlined" size="md" label="Correo electrónico" {...register('email')} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
+                        <Input variant="outlined" size="md" label="Correo electrónico" {...register('email')} 
+                        name="email"
+                        onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
                         {errors?.email && <span className="text-red-500 text-xs">{errors.email.message}</span>}
                     </div>
                     <div className="mt-4 w-100">
@@ -86,10 +100,10 @@ export default function ContactForm(){
                         {errors?.telefono && <span className="text-red-500 text-xs">{errors.telefono.message}</span>}
                     </div>
                     <div className="mt-5">
-                        <Textarea variant="outlined" size="md" label="Mensaje" {...register("mensaje")} rows={8} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} required />  
+                        <Textarea variant="outlined" size="md" label="Mensaje" {...register("mensaje")} name="mensaje" rows={8} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} required />  
                     </div>
                     <div className="-ml-2.5 w-full col-span-2">
-                        <Checkbox
+                        <Checkbox {...register("politica")} 
                         label={<Typography
                             variant="small"
                             color="gray"
@@ -102,7 +116,7 @@ export default function ContactForm(){
                             &nbsp;Terms and Conditions
                             </a>
                         </Typography>}
-                        containerProps={{ className: "-ml-2.5" }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}              />
+                        containerProps={{ className: "-ml-2.5" }} required onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}              />
                     </div>
                     <Button type="submit"
                     color="light-green" variant="gradient" size="lg" className="mt-8 mb-10"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
