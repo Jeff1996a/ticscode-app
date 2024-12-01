@@ -2,6 +2,7 @@
 import { Button, Checkbox, Input, Typography} from "@material-tailwind/react";
 import { InputPhoneCountryCode } from "../ui/input-phone/input-phone";
 import React from "react";
+import { register } from "module";
 
 export default function RegisterForm(){
 
@@ -22,7 +23,7 @@ export default function RegisterForm(){
                 <Input label="Apellidos" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               </div>
               <div className="mt-2">
-                <InputPhoneCountryCode handleChangeCountry={handlePhoneNumberChange}></InputPhoneCountryCode>
+                <InputPhoneCountryCode handleChangeCountry={handlePhoneNumberChange} register={undefined}></InputPhoneCountryCode>
               </div>
               <div className="mt-2">
                 <Input type="date" label="Fecha de nacimiento" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />       

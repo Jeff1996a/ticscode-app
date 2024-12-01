@@ -5,10 +5,13 @@ import { DialogBox } from "../ui/navbar/modal";
 import React, { useRef } from "react";
 import { InputPhoneCountryCode } from "../ui/input-phone/input-phone";
 import { useForm } from "react-hook-form";
-
+import { EmailTemplateProps, emailTemplateSchema } from "@/app/types/emailTemplate";
+import { zodResolver } from "@hookform/resolvers/zod";
 export default function ContactForm(){
 
-    const {reset, register} = useForm();
+    const {reset, handleSubmit, register, formState: { errors },
+     } = useForm<EmailTemplateProps>({
+    resolver: zodResolver(emailTemplateSchema)});
 
     const[open, setOpen] = React.useState(false);
     const[mensaje, setMensaje] = React.useState("");
@@ -27,9 +30,7 @@ export default function ContactForm(){
     }
 
     //Función para manejar el envío de correos
-    async function handleSubmit(event:any){
-
-        event.preventDefault()
+    const submitForm = async(event:any) =>{
     
         const formData = new FormData(event.target);
 
@@ -72,18 +73,20 @@ export default function ContactForm(){
         <>
            <PageTitle  heading="¡Contáctos!" hijo={"Escríbanos por cualquiera de nuestros canales y uno de nuestros asesores se comuncará para brindarle más información acerca de nuestros servicios."}>    
             </PageTitle>
-            <form id="correosClientes" onSubmit={handleSubmit} className="mx-auto mt-12 max-w-2xl text-center">
+            <form id="correosClientes" onSubmit={handleSubmit(submitForm)} className="mx-auto mt-12 max-w-2xl text-center">
                 <Input variant="outlined"  size="md" label="Nombres completos" 
                 {...register("nombres")}
                  onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>
                     <div className="mt-5">
-                        <Input variant="outlined" size="md" label="Correo electrónico" name="email" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
+                        <Input variant="outlined" size="md" label="Correo electrónico" {...register('email')} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} required/>   
+                        {errors?.email && <span className="text-red-500 text-xs">{errors.email.message}</span>}
                     </div>
                     <div className="mt-4 w-100">
-                        <InputPhoneCountryCode handleChangeCountry={handlePhoneNumberChange}></InputPhoneCountryCode>
+                        <InputPhoneCountryCode handleChangeCountry={handlePhoneNumberChange} register={register}></InputPhoneCountryCode>
+                        {errors?.telefono && <span className="text-red-500 text-xs">{errors.telefono.message}</span>}
                     </div>
                     <div className="mt-5">
-                        <Textarea variant="outlined" size="md" label="Mensaje" name="mensaje" rows={8} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} required />  
+                        <Textarea variant="outlined" size="md" label="Mensaje" {...register("mensaje")} rows={8} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} required />  
                     </div>
                     <div className="-ml-2.5 w-full col-span-2">
                         <Checkbox

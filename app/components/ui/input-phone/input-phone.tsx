@@ -18,10 +18,11 @@ const CODES = ["+54", "+591", "+55", "+57","+506",
 
 interface PhoneProps{
   handleChangeCountry: any;
+  register: any;
 }
 
  
-export function InputPhoneCountryCode({handleChangeCountry}:PhoneProps) {
+export function InputPhoneCountryCode({handleChangeCountry, register}:PhoneProps) {
   const [country, setCountry] = React.useState(0);
   const [pais, setPais] = React.useState("")
 
@@ -60,7 +61,7 @@ export function InputPhoneCountryCode({handleChangeCountry}:PhoneProps) {
         </Menu>
         <Input
                   type="number"
-                  name="telefono"
+                  {...register('telefono')}
                   pattern="[0-9]*"
                   inputMode="numeric"
                   variant="outlined"
