@@ -4,9 +4,11 @@ import { InputPhoneCountryCode } from "../ui/input-phone/input-phone";
 import React from "react";
 import { register } from "module";
 
+
 export default function RegisterForm(){
 
     const [pais, setPaisCliente] = React.useState("")
+
     
     async function handlePhoneNumberChange(pais: any){
       setPaisCliente(pais);
@@ -22,9 +24,7 @@ export default function RegisterForm(){
               <div className="mt-2">
                 <Input label="Apellidos" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />
               </div>
-              <div className="mt-2">
-                <InputPhoneCountryCode handleChangeCountry={handlePhoneNumberChange} register={undefined}></InputPhoneCountryCode>
-              </div>
+              
               <div className="mt-2">
                 <Input type="date" label="Fecha de nacimiento" size="md" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined} />       
               </div>
