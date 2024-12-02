@@ -1,7 +1,7 @@
 'use client';
 import { Button, Checkbox, Input, Textarea, Typography } from "@material-tailwind/react";
 import { PageTitle } from "@/app/components/page-title";
-import { DialogBox } from "../ui/navbar/modal";
+import { DialogBox } from "../ui/modal/modal";
 import React, { SyntheticEvent, useRef } from "react";
 import { InputPhoneCountryCode } from "../ui/input-phone/input-phone";
 import { useForm } from "react-hook-form";

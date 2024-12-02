@@ -413,7 +413,7 @@ export function ComplexNavbar() {
           <button
             className="hidden px-4 py-2 font-sans text-xs font-bold  text-center text-blue-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-green-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
             type="button" >
-            <Link href="/register"><span>Sign in</span></Link>
+            <Link href="https://portal.ticscode.com/register"><span>Sign in</span></Link>
           </button>
           <Button
             className="hidden select-none rounded-lg bg-gradient-to-tr from-light-green-500 to-light-green-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
@@ -429,7 +429,7 @@ export function ComplexNavbar() {
             className=" px-4 py-2 font-sans text-xs font-bold text-center text-blue-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
             type="button"
             color='blue-gray'>
-            <Link href="/register"><span>Sign in</span></Link>
+            <Link href="https://portal.ticscode.com/register"><span>Sign in</span></Link>
           </button>
           <button
             className="select-none rounded-lg bg-gradient-to-tr from-green-500 to-green-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
