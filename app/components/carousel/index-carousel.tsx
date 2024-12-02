@@ -66,13 +66,13 @@ export function CarouselWithContent() {
               Contamos con profesionales para diseñar y desarrollar una aplicación que se ajuste a las necesidades de su negocio.
             </Typography>
             <div className="flex justify-center gap-2">
-             <a href="/consultoria">
+             <a href="/home/consultoria">
                 <Button size="md" color="green" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Conocer más
                 </Button>
              </a>
               
-              <a href="/portafolio">
+              <a href="/home/portafolio">
                 <Button size="md" color="white" variant="text" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Soluciones
                     
@@ -104,7 +104,7 @@ export function CarouselWithContent() {
               Ofrecemos paquetes de desarrollo para alojar su aplicación en internet, configuración de correos y dominios para su organización. 
             </Typography>
             <div className="flex justify-center gap-22">
-              <a href="/consultoria">
+              <a href="/home/servicios">
               <Button size="md" color="green" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Conocer más
               </Button></a>
@@ -134,9 +134,10 @@ export function CarouselWithContent() {
               Disponemos de un equipo técnico para brindar soporte a todos nuestros clientes 24/7 por todos nuestros canales disponibles.
             </Typography>
             <div className="flex justify-center gap-22">
-              <Button size="md" color="green" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                Conocer más
-              </Button>
+              <a href="/home/servicios">
+                <Button size="md" color="green" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  Conocer más
+                </Button></a>
               
             </div>
           </div>
