@@ -7,6 +7,7 @@ import { InputPhoneCountryCode } from "../ui/input-phone/input-phone";
 import { useForm } from "react-hook-form";
 import { EmailTemplateProps, emailTemplateSchema } from "@/app/types/emailTemplate";
 import { zodResolver } from "@hookform/resolvers/zod";
+
 export default function ContactForm(){
 
     const {reset, handleSubmit, register,getValues, formState: { errors },

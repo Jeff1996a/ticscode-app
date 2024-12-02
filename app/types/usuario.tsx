@@ -50,4 +50,6 @@ const usuarioSchema = new Schema({
     }
 });
 
+
+
 export const Usuario = mongoose.model("Usuario", usuarioSchema);
